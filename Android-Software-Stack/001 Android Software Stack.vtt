@@ -1,0 +1,88 @@
+WEBVTT
+
+00:01.540 --> 00:07.900
+So let's have a look at Android software stack, because it's composed of several different layers.
+
+00:08.780 --> 00:13.400
+So each layer defines interfaces and offers specific services.
+
+00:14.490 --> 00:18.000
+So let's briefly examine Android's architecture from the bottom up.
+
+00:19.490 --> 00:24.200
+As you can see in the figure, Android is built on top of the Linux kernel.
+
+00:25.130 --> 00:31.820
+As in any unique system, the colonel provides drivers for hardware networking file system access as
+
+00:31.820 --> 00:33.380
+well as process management.
+
+00:35.010 --> 00:43.230
+Now, on top of the colonel, the hardware abstraction layer defines a standard interface for interacting
+
+00:43.230 --> 00:45.030
+with built in hardware components.
+
+00:45.510 --> 00:51.330
+So this is the basis for allowing applications to interact with the devices hardware, for example,
+
+00:51.540 --> 00:56.280
+it allows a stock phone application to use device's microphone and speaker.
+
+00:58.490 --> 01:01.430
+Android runtime, also known as Art.
+
+01:03.670 --> 01:10.960
+So this is an application runtime environment replacing Dalvik, which was the process virtual machine
+
+01:11.350 --> 01:18.970
+that was originally used by Android, so outperforms the translation the applications bytecode into
+
+01:18.970 --> 01:23.140
+native instructions are later executed by the devices runtime environment.
+
+01:23.770 --> 01:28.480
+I'll explain this process in much more detail in the next lecture.
+
+01:30.680 --> 01:38.510
+How many core Android system components and services such as art and hell are built from native code
+
+01:38.510 --> 01:43.250
+that requires native libraries written in C and C++?
+
+01:44.680 --> 01:51.310
+The Android platform provides Java framework APIs to expose the functionality of some of these native
+
+01:51.310 --> 01:52.360
+libraries to apps.
+
+01:53.280 --> 02:01.470
+Android's core Java libraries are originally derived from the Apache Harmony Project and just happened
+
+02:01.470 --> 02:03.960
+to be the next layer on our stack.
+
+02:06.250 --> 02:13.000
+Now, on top of native libraries and Android runtime, there is an Android framework.
+
+02:13.880 --> 02:23.030
+So Android framework includes Android APIs such as user interface telephony, resources, locations,
+
+02:23.660 --> 02:26.720
+content providers and package managers.
+
+02:27.640 --> 02:32.410
+It provides a lot of classes and interfaces for Android application development.
+
+02:35.300 --> 02:38.480
+Now, on top of the Android framework, there are applications.
+
+02:39.630 --> 02:48.000
+All applications, such as browser camera, calendar, home contact and settings are using the Android
+
+02:48.000 --> 02:51.540
+framework that uses Android runtime and libraries.
+
+02:52.610 --> 02:57.170
+Android runtime and native libraries are using Linux kernel.

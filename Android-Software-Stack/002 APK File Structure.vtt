@@ -1,0 +1,313 @@
+WEBVTT
+
+00:01.530 --> 00:06.390
+So it's also very important to know about the basics of file structure, of an Android application.
+
+00:07.470 --> 00:13.330
+So on this lecture, some important files and folders and their significance will.
+
+00:13.600 --> 00:19.590
+Well, we'll go over so that you can easily understand the Android studio work environment.
+
+00:20.960 --> 00:29.060
+So Android studio is the official Integrated Development Environment, or IDY, for Android app development,
+
+00:29.810 --> 00:35.150
+Android Studio provides the fastest possible turnaround on your coding and running workflow.
+
+00:36.730 --> 00:43.480
+Now, throughout the course, we will be using Android studio mostly as an Android emulator, so this
+
+00:43.480 --> 00:50.320
+Android emulator simulates Android devices on your computer so that you can test your applications on
+
+00:50.320 --> 00:58.420
+a variety of devices and Android API levels without needing to have, you know, several physical devices
+
+00:58.420 --> 01:00.810
+scattered across your desk.
+
+01:00.820 --> 01:03.290
+My desk gets smaller and smaller every day.
+
+01:03.490 --> 01:05.060
+No, I won't show you a picture of it.
+
+01:05.230 --> 01:09.970
+So the emulator provides almost all of the capabilities of a real Android device.
+
+01:10.330 --> 01:12.490
+So it's definitely worth a look.
+
+01:13.930 --> 01:16.090
+However, we need to install it first.
+
+01:17.050 --> 01:21.790
+So I want you to find your favorite browser search for Android studio.
+
+01:23.220 --> 01:28.320
+And the first website is indeed the official website of Android studio.
+
+01:28.360 --> 01:29.250
+So just click on it.
+
+01:30.140 --> 01:36.680
+Scroll down a little bit and quickly browse for the features and.
+
+01:37.750 --> 01:44.980
+OK, so here you see the layout editor, so this enables you to quickly build layouts by dragging UI
+
+01:44.980 --> 01:51.250
+elements into a visual design editor instead of writing layout SML by hand.
+
+01:52.830 --> 01:55.950
+Android studio also includes APK Analyzer.
+
+01:57.010 --> 02:03.190
+And this provides immediate insight into the composition of an epic after the build process complete.
+
+02:04.680 --> 02:12.390
+Using the APK analyzer can reduce the time while debugging issues with decs files and resources within
+
+02:12.390 --> 02:12.830
+and out.
+
+02:13.760 --> 02:17.000
+It also will help you reduce an epic size.
+
+02:19.600 --> 02:25.000
+Now, like you said before, it's thanks to the Emulator feature that you can simulate incoming phone
+
+02:25.000 --> 02:32.320
+calls and text messages, specify the location of the device, simulate hardware sensors, access the
+
+02:32.320 --> 02:36.060
+Google Play store and, well, just about anything you can think of.
+
+02:37.290 --> 02:42.870
+Android studio also has a flexible build system and real time profiler's.
+
+02:44.180 --> 02:45.860
+Now, scroll down a little bit more.
+
+02:47.030 --> 02:50.720
+And here are the Android studio download files.
+
+02:52.450 --> 02:55.390
+So you can download it here depending on your operating system.
+
+02:56.300 --> 03:00.950
+And here you can download the package suitable for your particular operating system.
+
+03:02.100 --> 03:05.700
+So these are the system requirements to use Android studio.
+
+03:07.910 --> 03:11.030
+So as you've read it through a little bit, let's go ahead and download.
+
+03:11.930 --> 03:16.490
+And, of course, before downloading will agree to terms and conditions.
+
+03:18.050 --> 03:20.150
+Click on download and save the file.
+
+03:20.390 --> 03:23.090
+OK, so now we just wait a little bit.
+
+03:28.650 --> 03:33.600
+And it is now downloaded so we can click on the downloaded disk file.
+
+03:37.110 --> 03:39.740
+And I'll move it to the application folder.
+
+03:44.790 --> 03:48.420
+And this is good, so insulation is now complete.
+
+03:49.460 --> 03:52.480
+OK, so go ahead and open the Android studio.
+
+03:59.760 --> 04:05.180
+And there's a couple of steps we need to step through to get set up.
+
+04:06.470 --> 04:07.100
+Next.
+
+04:08.490 --> 04:11.310
+I'll choose the standard type next.
+
+04:12.670 --> 04:15.850
+So I do like dark theme and next.
+
+04:17.510 --> 04:21.040
+These are the installation settings, so let's review them.
+
+04:22.390 --> 04:28.510
+And it all looks good to me, so let's go ahead and quick finish.
+
+04:29.660 --> 04:31.400
+Now it's downloading the components.
+
+04:33.200 --> 04:37.400
+And you might need to allow little time for the insulation.
+
+04:41.480 --> 04:47.210
+All right, so now I've got to allow some extensions from the security preferences.
+
+04:49.360 --> 04:53.730
+Use password or fingerprint and allow from here.
+
+04:55.710 --> 04:57.390
+Now we can lock the changes.
+
+04:59.310 --> 05:02.280
+OK, so insulation is complete.
+
+05:03.520 --> 05:04.660
+Let's go ahead and open it.
+
+05:09.570 --> 05:11.300
+OK, let's create a new project.
+
+05:13.730 --> 05:22.010
+There are project templates for phones, tablets, where OS, TV, automotive, you can choose one of
+
+05:22.010 --> 05:24.530
+them depending on the platform that you want to use.
+
+05:26.000 --> 05:31.040
+And I'm just going to select a basic activity template for phones.
+
+05:32.710 --> 05:33.520
+Click next.
+
+05:34.600 --> 05:39.190
+And let's name the application that we're going to develop.
+
+05:39.700 --> 05:42.910
+So this is a package name and default save location.
+
+05:44.560 --> 05:47.680
+You can choose Java or Katlin as a programming language.
+
+05:50.300 --> 05:57.380
+So like I said before, we can use Android eight, Orio, Android nine, PAE or Android 10.
+
+05:59.440 --> 06:03.550
+So what I'm going to do is select Android nine and finish.
+
+06:06.070 --> 06:08.260
+Yeah, we can go ahead and skip the tips for now.
+
+06:11.360 --> 06:17.840
+All right, so now on the left hand side, there is the file structure of the application.
+
+06:19.230 --> 06:21.690
+To explain the most important ones briefly.
+
+06:23.050 --> 06:24.900
+First of all, have a look at the main folders.
+
+06:26.200 --> 06:31.690
+OK, so you see how they are manifest Java Reds and gradable scripts.
+
+06:33.650 --> 06:37.550
+So here, Android manifest, XM Alfond.
+
+06:39.150 --> 06:46.200
+So let me explain that every project Android includes a manifest file stored in the root directory of
+
+06:46.200 --> 06:47.700
+its project hierarchy.
+
+06:48.850 --> 06:57.530
+Manifest file is an important part of our app because it defines the structure and metadata of our application,
+
+06:57.880 --> 07:01.300
+its components and its requirements.
+
+07:02.970 --> 07:12.360
+His file includes notes for each of the activities, services, content providers and broadcast receiver
+
+07:12.360 --> 07:17.760
+that makes the applications and while using content filters and permissions.
+
+07:19.200 --> 07:23.310
+Determines how they coordinate with each other and other applications.
+
+07:23.340 --> 07:26.040
+So this is what makes it all possible.
+
+07:28.720 --> 07:31.360
+And we arrive at the Java folder.
+
+07:33.200 --> 07:36.470
+The Java folder contains the Java source code files.
+
+07:37.830 --> 07:43.410
+These files are used as a controller for a controlled UI or layout file.
+
+07:44.870 --> 07:51.980
+It gets the data from the loud file, and after processing the data output will be shown in the UI layout.
+
+07:54.530 --> 07:57.830
+So it works on the back end of an Android application, basically.
+
+08:00.420 --> 08:04.470
+The next one is a drawable file under the Reds folder.
+
+08:06.470 --> 08:11.360
+A drawable folder contains resource type files that can be drawn.
+
+08:12.880 --> 08:21.760
+Draw bulls may take a variety of files like bitmap PMG, jpeg nine, patch vector, XML shape, layered
+
+08:21.760 --> 08:23.920
+slates, levels, scale.
+
+08:25.480 --> 08:27.130
+So why don't we have a look at the layout?
+
+08:28.400 --> 08:34.700
+A layout defines the visual structure for user interface, such as the UI for an Android application.
+
+08:36.030 --> 08:41.040
+This folder store's layout files that are written in the language XML.
+
+08:43.990 --> 08:50.740
+You can always add additional layout objects or widgets as child elements to gradually build a view
+
+08:50.740 --> 08:54.190
+hierarchy that defines your layout file.
+
+08:55.110 --> 08:57.220
+Another folder is Mitta Map.
+
+08:58.150 --> 09:04.300
+And it contains the image asset file that can be used in Android studio applications.
+
+09:05.300 --> 09:13.460
+You can generate the following icon types like launcher icons, action bar and TAB icons and notification
+
+09:13.460 --> 09:14.090
+icons.
+
+09:16.630 --> 09:22.990
+And navigation graph is a resource file that contains all of your destinations and actions.
+
+09:24.680 --> 09:28.220
+The graph represents all of your apps, navigation paths.
+
+09:30.180 --> 09:36.990
+Now, here's the colors dot XML file, so it contains color resources of Android applications.
+
+09:37.890 --> 09:45.680
+Different color values are identified by a unique name that can be used in the Android application program.
+
+09:47.440 --> 09:55.270
+And then finally, we come upon the build that gradle module app file, and this defines the module
+
+09:55.280 --> 09:57.340
+specific build configurations.
+
+09:59.190 --> 10:03.900
+And here you can add dependencies that you need in your Android application.
