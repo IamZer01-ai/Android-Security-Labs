@@ -1,0 +1,97 @@
+WEBVTT
+
+00:02.310 --> 00:09.390
+So let's look at some of the details of Android runtime and the compilation process of an epic with
+
+00:09.390 --> 00:10.860
+a lifecycle diagram.
+
+00:13.330 --> 00:20.290
+Android apps are usually written in Java and compiled to Dalvik bytecode, which is somewhat different
+
+00:20.290 --> 00:22.180
+from the traditional Java bytecode.
+
+00:23.730 --> 00:31.350
+Dalvik bytecode is created by first compiling the Java code to class files and converting the JVM byte
+
+00:31.350 --> 00:33.750
+code to the Dalvik decs.
+
+00:34.740 --> 00:37.470
+Format with index tool.
+
+00:40.000 --> 00:51.130
+Dex, LPT does some optimizations on the text file and the result of Dex LPT is an oh Dex or optimized
+
+00:51.130 --> 00:52.060
+dex file.
+
+00:53.290 --> 00:59.380
+Then it's packaged into RPK files with a B.K. builder.
+
+01:01.020 --> 01:09.360
+So let's have a look at that, because RPK, it stands for Android Package Kit and also Android application
+
+01:09.360 --> 01:09.960
+package.
+
+01:12.020 --> 01:19.430
+So it's a file format that Android uses to distribute and install apps, it contains all of the elements
+
+01:19.430 --> 01:22.430
+that an app needs to install correctly on your device.
+
+01:23.520 --> 01:31.350
+So just like files on windows, you can place in APK file on your Android device to install an app.
+
+01:32.390 --> 01:36.830
+Oh, Dex files and Dex files were executed by Dalvik.
+
+01:38.100 --> 01:45.000
+Dalvik also uses Just in Time compilation, which was introduced in Android 2.0 to Froyo.
+
+01:46.180 --> 01:53.860
+Just in time, compilation adversely affects performance because compilation must be performed every
+
+01:53.860 --> 01:55.380
+time the app is executed.
+
+01:56.830 --> 02:01.990
+Now to improve performance since Android 5.0 Lollipop.
+
+02:03.270 --> 02:08.070
+Android executes this by code on the Android runtime or A.R.T..
+
+02:09.640 --> 02:20.020
+The Android system uses a tool called Decs to 08, which converts decs files into LTH files, which
+
+02:20.020 --> 02:21.580
+can be executed natively.
+
+02:22.540 --> 02:29.440
+So instead of having bytecode that is interpreted by a virtual machine and now has native code that
+
+02:29.440 --> 02:32.020
+will be executed natively by the processor.
+
+02:33.270 --> 02:37.260
+So this is called ahead of time or a Iot compilation.
+
+02:38.800 --> 02:46.390
+Now, as the name would imply, apps are pre compiled before they're executed for the very first time.
+
+02:47.440 --> 02:52.180
+This decompiled machine code is used for all subsequent executions.
+
+02:53.330 --> 02:58.760
+A improves performance by a factor of two while reducing power consumption.
+
+03:00.830 --> 03:07.670
+Art increases battery performance to such a large extent because of the AOT.
+
+03:08.940 --> 03:16.740
+So while Dalvik uses the Gitti or Gite approach, it results in much more battery utilization.
+
+03:17.730 --> 03:23.880
+So the key difference between Dalvik and art is the way the bytecode is executed.

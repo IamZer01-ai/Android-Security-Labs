@@ -1,0 +1,280 @@
+WEBVTT
+
+00:00.120 --> 00:08.970
+Android is a Linux based mobile operating system developed by Google, so it serves as its mobile operating
+
+00:08.970 --> 00:09.360
+system.
+
+00:10.290 --> 00:16.950
+Today, the platform is the foundation for a wide variety of modern technology, such as mobile phones
+
+00:16.950 --> 00:21.150
+and tablets, wearable tech TVs and other smart devices.
+
+00:22.650 --> 00:28.560
+Typical Android build ship with a range of preinstalled apps and support the installation of third party
+
+00:28.560 --> 00:32.280
+apps through the Google Play store and other marketplaces.
+
+00:33.330 --> 00:41.220
+It's free, it's open source, and it's source code is known as Android Open Source Project, which
+
+00:41.220 --> 00:44.550
+is primarily licensed under the Apache license.
+
+00:46.040 --> 00:55.280
+Android OS is divided into various version numbers, implying significant jumps and features operation
+
+00:55.280 --> 00:58.670
+and stability, which usually have code names.
+
+01:00.300 --> 01:07.110
+The history of Android begins in October 2003, well before the term smartphone was widely used and
+
+01:07.680 --> 01:12.420
+well several years before Apple announced its first iPhone and iOS.
+
+01:13.970 --> 01:22.250
+In 2005, the next big chapter, Android's history began when the original company was acquired by Google.
+
+01:24.350 --> 01:31.790
+And of course, in 2007, Apple launched the first iPhone and ushered in a new era in mobile computing
+
+01:32.600 --> 01:33.260
+at that time.
+
+01:33.560 --> 01:38.060
+Google was still running on Android in, well, secret.
+
+01:39.430 --> 01:45.970
+So that year, the company slowly began to reveal plans to compete with Apple and other mobile platforms
+
+01:46.570 --> 01:53.650
+and the public made of Android Version 1.0 launch for developers on November 5th, 2007.
+
+01:55.820 --> 02:05.030
+By September 2008, the very first Android smartphone was announced, the T-Mobile G1, also known as
+
+02:05.060 --> 02:07.190
+the HTC Dream.
+
+02:08.150 --> 02:09.350
+In other parts of the world.
+
+02:11.720 --> 02:18.890
+The first official generic code name for Android didn't appear until the one point five cupcake release
+
+02:18.890 --> 02:22.060
+was released in April of 2009.
+
+02:24.110 --> 02:29.990
+Now, naming Android versions after sweet candies and sweets traditionally belonged to Ryan Gibson,
+
+02:30.740 --> 02:32.840
+the project manager at Google.
+
+02:33.770 --> 02:39.920
+I don't know if you're like me, but I can certainly whet my appetite during Android versions, but
+
+02:39.920 --> 02:43.910
+I'm going to continue to list him and maybe grab some snacks along the way.
+
+02:44.420 --> 02:51.620
+But I'm sorry if it if you're somewhere where you won't be able to, well, imbibe.
+
+02:52.640 --> 02:57.440
+But anyway, Google quickly launched Android one six Donut.
+
+02:58.410 --> 03:00.540
+In September 2009.
+
+03:01.500 --> 03:09.030
+So the new OS now offered support for carriers using CDMA based networks, and this allowed Android
+
+03:09.030 --> 03:12.110
+phones to be sold by all carriers around the world.
+
+03:14.720 --> 03:23.600
+In October 2009, Google released Version 2.0 of the OS with the official code name Éclair and one of
+
+03:23.600 --> 03:25.110
+my favorites, I must say.
+
+03:26.090 --> 03:35.180
+So this version was the first to add text to speech support and also introduce live wallpapers, multiple
+
+03:35.180 --> 03:41.600
+account support and Google Maps navigation, among many other new features and improvements.
+
+03:42.780 --> 03:48.230
+Android to not to Froyo was officially launched in May of 2010.
+
+03:49.430 --> 03:58.250
+Now, Dalvik git compiler that compiles bytecode into native machine code at runtime was added to Froyo.
+
+03:59.300 --> 04:05.510
+So it also has several new features, including Wi-Fi, mobile hotspot functions and push notifications
+
+04:06.140 --> 04:12.260
+via the Setu DRM service or Android cloud to device messaging service.
+
+04:13.520 --> 04:16.850
+Of course, flash support and some of the things.
+
+04:18.740 --> 04:28.580
+Now, Android two to three Gingerbread was launched in September of 2010, OS received a user interface
+
+04:28.580 --> 04:30.620
+refresh under gingerbread.
+
+04:31.530 --> 04:38.220
+That is support for using near field communication or NFC functions for smartphones with the required
+
+04:38.220 --> 04:38.850
+hardware.
+
+04:41.710 --> 04:50.830
+By February 2011, Honeycomb was introduced, it was created for tablets and other mobile devices with
+
+04:50.830 --> 04:52.000
+larger display.
+
+04:54.220 --> 05:01.300
+And then another of my favorites, Ice Cream Sandwich, was released in October 2011, it included a
+
+05:01.300 --> 05:06.970
+favourite's on the home screen, along with the first support for unlocking a phone by using its camera
+
+05:06.970 --> 05:08.890
+to take a picture of its owners face.
+
+05:09.830 --> 05:16.220
+A kind of biometric sign in support has evolved and certainly improved considerably since.
+
+05:18.150 --> 05:25.900
+The jelly bean era of Android began in June of 2012 with the release of Android 4.0 one.
+
+05:27.110 --> 05:33.170
+There are new notification features that display more content or action buttons, along with full support
+
+05:33.170 --> 05:36.050
+for the Android version of Google's Chrome Web browser.
+
+05:37.920 --> 05:44.190
+Android four, not four, is the first version of the OS, it actually used a previously trademarked
+
+05:44.190 --> 05:45.720
+name for a piece of candy.
+
+05:47.660 --> 05:54.260
+Kit Kat officially launched in September 2013, and it was optimized to run on smartphones, it had
+
+05:54.440 --> 05:57.410
+as little as 512 megabytes of RAM.
+
+05:58.380 --> 06:04.860
+So this allowed phone makers to use the latest version of Android on much cheaper handsets.
+
+06:08.080 --> 06:14.860
+Then Android 5.0 or Lollipop launched in the fall of 2014.
+
+06:16.580 --> 06:22.670
+The Android runtime became the default runtime for devices running Android 5.0 and higher.
+
+06:23.870 --> 06:30.590
+So Android 5.0 Lollipop is also a major shakeup in in the overall look of the operating system.
+
+06:31.560 --> 06:37.350
+It was the first version of the OS that used Google's new material design language.
+
+06:39.070 --> 06:44.760
+The fall of 2015, Android six, not zero Marshmallow was released.
+
+06:45.810 --> 06:52.050
+It included features such as native support for fingerprint, biometric unlocking, USB type C support,
+
+06:52.560 --> 06:56.370
+the introduction of Google Pay and oh, so much more.
+
+06:59.090 --> 07:05.650
+Version seven zero of a Google's mobile operating system launched in the fall of 2016.
+
+07:06.730 --> 07:12.670
+Android Newgate supported the Volcan API for faster 3D rendering.
+
+07:16.340 --> 07:24.590
+In March 2017, Google announced and release the first developer preview for Android Oreo to impact
+
+07:24.590 --> 07:30.050
+in lots of visual changes into the Settings menu, along with native support for picture in picture
+
+07:30.050 --> 07:37.130
+mode Notification Channel's new autofill APIs for better management of passwords and filled data.
+
+07:37.370 --> 07:39.290
+And again, a whole lot more.
+
+07:41.970 --> 07:47.790
+On August six, 2018, the company officially launched the final version of Android nine Donziger,
+
+07:48.660 --> 07:51.600
+giving it the official code name of PI.
+
+07:52.570 --> 07:59.410
+Android nine died zero, PI included some new features designed to help extend your smartphones, battery
+
+07:59.410 --> 07:59.860
+life.
+
+08:00.930 --> 08:07.920
+Now, that was achieved with the use of on device machine learning, which predict which apps you're
+
+08:07.920 --> 08:11.070
+going to use now and which you won't use until later.
+
+08:13.180 --> 08:16.240
+On August 22nd, 2019.
+
+08:18.090 --> 08:23.670
+Google announced a major refresh of the Android brand, and that included.
+
+08:24.740 --> 08:31.000
+A new logo and more importantly, the decision to ditch the traditional desert name for the next version.
+
+08:31.910 --> 08:35.000
+So as a result, I go without dessert.
+
+08:35.240 --> 08:39.830
+An Android queue is officially known just as Android 10.
+
+08:40.760 --> 08:46.790
+Android 10 had a number of new features and improvements, as well as a number of new APIs.
+
+08:48.040 --> 08:53.830
+And that included support for the rush of then upcoming foldable phones.
+
+08:55.530 --> 09:02.810
+Then, of course, finally, the final version of Android 11 was launched on September 8th of 2020.
+
+09:04.150 --> 09:10.870
+Now, Android 11 has arrived with plenty of new features, and that includes a new conversations notification
+
+09:10.870 --> 09:15.990
+category where all of your chats from various apps are collected in one place.
+
+09:17.110 --> 09:23.970
+You also have the option to save every notification that has appeared on your phone in the last 24 hours.
+
+09:25.110 --> 09:31.110
+A brand new feature lets you record your phone screen, complete with audio, without needing a third
+
+09:31.110 --> 09:31.770
+party app.
+
+09:32.550 --> 09:38.600
+There's also a new section of Android 11 dedicated to controlling smart home devices.
+
+09:38.640 --> 09:40.230
+It's come a long way, baby.
