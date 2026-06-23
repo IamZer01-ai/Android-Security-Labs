@@ -1,0 +1,157 @@
+WEBVTT
+
+00:00.580 --> 00:04.720
+So let's return to the main activity, Java, to complete the application.
+
+00:08.240 --> 00:11.480
+So now we should create a question object from the questions class.
+
+00:13.880 --> 00:16.610
+And we can find the answer.
+
+00:17.770 --> 00:19.210
+The score of the user.
+
+00:21.490 --> 00:27.400
+I will update the questions depending on the length of the questions, so I'll create the integer that
+
+00:27.400 --> 00:29.230
+will keep the length of the questions.
+
+00:30.320 --> 00:35.400
+Let's create a variable to randomly update the questions with the random class.
+
+00:36.790 --> 00:38.710
+And as you can see, it's imported here.
+
+00:41.090 --> 00:45.380
+Now, to update the questions I would call the method here and.
+
+00:47.470 --> 00:49.630
+I also need to create a method for this.
+
+00:52.410 --> 00:53.730
+So that's created here.
+
+00:56.040 --> 01:01.890
+You can set the text to be displayed in the text view, either when declaring it in your layout file
+
+01:02.400 --> 01:05.430
+or by using its set text method.
+
+01:07.200 --> 01:10.740
+So I said the text for all answers and questions.
+
+01:23.810 --> 01:31.850
+OK, so I guess here now I missed something, yes, here I should have created a new random instance.
+
+01:32.980 --> 01:34.390
+OK, great, so let's.
+
+01:35.740 --> 01:37.900
+Yeah, let's complete the listener method's.
+
+01:39.270 --> 01:45.330
+So we must write a conditional statement here to check the correctness of the answer, and if the answer
+
+01:45.330 --> 01:47.490
+is true, the score must be increased.
+
+01:55.890 --> 02:01.820
+If the answer is false, then we need a method to finish the game, so we'll create the last method
+
+02:01.980 --> 02:03.950
+game over for that purpose.
+
+02:05.950 --> 02:10.480
+So when the game is over, an alert will appear thanks to the alert dialogue builder.
+
+02:11.630 --> 02:16.910
+And we'll set a message for this alert that will also display this score.
+
+02:27.680 --> 02:34.400
+So let's say there's going to be two options on this alert dialogue, we'll create a positive button
+
+02:34.400 --> 02:36.590
+for the user who wants to continue the game.
+
+02:38.930 --> 02:41.690
+The dialogue interface on Click Listener.
+
+02:42.620 --> 02:48.770
+Is used to allow the creator of a dialogue to run some code when an item on the dialogue is clicked.
+
+02:52.070 --> 02:59.510
+And the star activity method starts in the instance of the display message activity that specified by
+
+02:59.510 --> 03:00.290
+the intent.
+
+03:02.370 --> 03:05.040
+So next, we'll need to create the intent.
+
+03:07.070 --> 03:15.080
+The intent represents an app's intent to do something right, so get application context will return
+
+03:15.080 --> 03:17.750
+the context for the entire application.
+
+03:21.110 --> 03:24.320
+And if the game is over and the user may want to exit.
+
+03:25.400 --> 03:30.620
+Well said a negative button for this, and it will finish the game and exit.
+
+03:39.400 --> 03:46.480
+And then finally, we need to create an alert dialog object and call it with a show method to display
+
+03:46.480 --> 03:47.050
+the screen.
+
+03:50.340 --> 03:54.890
+So now let's complete all the methods for each answer.
+
+03:57.050 --> 04:03.500
+Just copy this part and paste for every method of the answers, and don't forget to change the number,
+
+04:03.500 --> 04:04.190
+the answers.
+
+04:08.940 --> 04:15.780
+All right, so actually, it's a very simple project, but the project is complete now.
+
+04:17.100 --> 04:22.410
+But before running the app, you should select the emulator that you created before.
+
+04:23.570 --> 04:25.010
+All right, so let's start, Dhiab.
+
+04:26.600 --> 04:32.750
+And our Android studio is installing the app on the video and see how it starts the emulator.
+
+04:34.600 --> 04:35.920
+All right, so let's try out the game.
+
+04:44.590 --> 04:47.500
+Well, look at that, it's working as expected.
+
+04:49.770 --> 04:55.020
+But I'll tell you, let's delete the hard coded text view that's displayed first before getting the
+
+04:55.020 --> 04:55.470
+score.
+
+04:57.910 --> 05:01.300
+So to do that, I don't want to go to the design section.
+
+05:02.630 --> 05:05.150
+Delete the default text for the score.
+
+05:06.650 --> 05:08.470
+And let's run the app again.
+
+05:11.300 --> 05:19.220
+All right, great, now you can, of course, change the UI for a much better view or extend the capabilities
+
+05:19.220 --> 05:23.480
+of the app if you want to, but this is what we're going to use here to for.

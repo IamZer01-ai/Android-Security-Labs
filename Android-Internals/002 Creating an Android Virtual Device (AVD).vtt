@@ -1,0 +1,70 @@
+WEBVTT
+
+00:01.490 --> 00:06.680
+So in the next lecture will develop a basic Android application to better understand the background
+
+00:06.680 --> 00:10.030
+of the Android structure and Android security.
+
+00:10.880 --> 00:17.690
+But before developing an application, first, we do need to create an Android virtual device to run
+
+00:17.690 --> 00:19.490
+and simulate our application.
+
+00:20.840 --> 00:21.910
+So why don't we get started?
+
+00:22.880 --> 00:28.700
+Go to Android studio, click on Configure on the lower right corner and avoid manager.
+
+00:30.360 --> 00:31.650
+Create a virtual device.
+
+00:33.680 --> 00:41.840
+Now, the select hardware page appears and there are signs and resolution information here and all the
+
+00:41.840 --> 00:43.190
+different devices.
+
+00:44.460 --> 00:49.260
+To choose from so select a hardware profile and click next.
+
+00:50.230 --> 00:54.790
+Now we'll select a system image, so I'll download Android are.
+
+00:58.120 --> 01:00.610
+And see how it's installing the components.
+
+01:02.800 --> 01:04.480
+And we'll wait for a bit.
+
+01:06.830 --> 01:08.540
+There it is now you can click, finish.
+
+01:10.200 --> 01:14.250
+And select R from this list next.
+
+01:16.180 --> 01:19.120
+All right, so we'll name the new device.
+
+01:22.520 --> 01:26.860
+All right, so it's ready, we can run the device, so let's double click on it.
+
+01:28.400 --> 01:29.290
+Now it's starting up.
+
+01:34.010 --> 01:40.430
+All right, so let's have a look at it, you can see the emulator looks like a real device.
+
+01:41.360 --> 01:47.030
+Their applications in the menu and you can do any changes from the extended control settings of the
+
+01:47.030 --> 01:47.990
+device from here.
+
+01:49.970 --> 01:56.690
+So after developing an application, Android studio will run the app on any selected virtual device
+
+01:56.700 --> 01:57.410
+that you want.

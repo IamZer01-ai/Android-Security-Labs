@@ -1,0 +1,319 @@
+WEBVTT
+
+00:00.990 --> 00:07.530
+So Android apps are made of several high level components, the main components are.
+
+00:08.450 --> 00:09.220
+Activities.
+
+00:10.110 --> 00:10.920
+Fragments.
+
+00:11.820 --> 00:15.750
+Enterprise has communication mechanism intense.
+
+00:17.320 --> 00:18.820
+Broadcast receivers.
+
+00:19.700 --> 00:21.830
+Content providers and services.
+
+00:23.850 --> 00:29.670
+So all these elements are provided by the Android operating system in the form of predefined classes
+
+00:30.090 --> 00:36.930
+available through APIs, so activities they'll make up the visible part of any app.
+
+00:37.380 --> 00:39.290
+There's one activity per screen.
+
+00:39.300 --> 00:43.710
+So an app with three different screens implements three different activities.
+
+00:45.300 --> 00:54.450
+Activities are declared by extending the activity class, they contain all user elements, fragments,
+
+00:54.780 --> 00:56.670
+views and layouts.
+
+00:58.610 --> 01:03.710
+So each activity needs to be declared in the Android manifest.
+
+01:04.650 --> 01:12.630
+With the following syntax activities not declared in the manifest, can't be displayed at attempting
+
+01:12.630 --> 01:15.210
+to launch them will raise an exception.
+
+01:16.080 --> 01:22.320
+So, like ABC's activities have their own life cycle and need to monitor system changes in order to
+
+01:22.320 --> 01:23.190
+be able to handle them.
+
+01:24.720 --> 01:33.510
+Activities can be in the following states active, paused, stopped and inactive, these states are
+
+01:33.510 --> 01:40.620
+managed by the Android operating system and accordingly, activities can implement the following event
+
+01:40.620 --> 01:41.310
+managers.
+
+01:42.000 --> 01:50.160
+Now, an app may not explicitly implement all event managers, in which case default actions are taken.
+
+01:51.610 --> 01:52.450
+A fragment.
+
+01:54.380 --> 02:00.260
+Represents behavior or portion of the user interface within the activity.
+
+02:01.360 --> 02:06.880
+Fragments were actually introduced in Android with the version Honeycomb 3.0.
+
+02:08.780 --> 02:16.760
+Now, fragments are meant to encapsulate parts of the interface to facilitate reusability and adaptation,
+
+02:17.720 --> 02:20.150
+especially for different screen sizes.
+
+02:21.540 --> 02:28.770
+So fragments are autonomous entities, and that means that they include all of their required components.
+
+02:29.990 --> 02:36.350
+They've got their own layout, buttons, et cetera, however, they must be integrated with activities
+
+02:36.380 --> 02:41.680
+in order for them to be useful, fragments can't exist on their own.
+
+02:42.840 --> 02:48.650
+They have their own life cycle, which is tied to the life cycle of the activities that implement them.
+
+02:49.080 --> 02:55.170
+So to follow on from that, because fragments have their own life cycle, the fragment class contains
+
+02:55.170 --> 02:59.460
+event managers that can be redefined and extended.
+
+03:01.330 --> 03:12.520
+He's event managers include on attach uncreate, on start undestroyed and on detach, there's a few
+
+03:12.520 --> 03:12.850
+more.
+
+03:14.370 --> 03:19.620
+Now, we didn't use fragments in our quiz game, but it can be easily implemented by extending the fragment
+
+03:19.620 --> 03:21.870
+class provided by Android like this.
+
+03:22.620 --> 03:27.720
+Fragments don't need to be declared in manifest files because they depend on activities.
+
+03:29.440 --> 03:35.830
+Now, as we've already learned, every Android process has its own sandbox address space.
+
+03:37.540 --> 03:45.550
+But I want to introduce you to inner process communication facilities, because this allows APS to exchange
+
+03:45.550 --> 03:51.190
+signals and data securely, so instead of relying on the default Linux IPC facilities.
+
+03:52.160 --> 03:54.980
+Android's IPC is based on Binder.
+
+03:56.020 --> 04:01.240
+A binder is an Android specific and a process communication mechanism.
+
+04:02.360 --> 04:05.330
+And remote method invocation system.
+
+04:07.230 --> 04:15.480
+So that means that one Android process can call a routine and another Android process using Binder to
+
+04:15.480 --> 04:21.000
+identify the method to invoke and pass the arguments between processes.
+
+04:21.950 --> 04:26.390
+And I communication can be simply understood as client server mode.
+
+04:27.580 --> 04:35.290
+Client request service server receives a client request and processes it accordingly or may bring back
+
+04:35.290 --> 04:36.370
+the result to the client.
+
+04:38.580 --> 04:41.460
+The binding mechanism works briefly as follows.
+
+04:43.520 --> 04:47.660
+One, the client obtained servers proxy through service manager.
+
+04:49.110 --> 04:54.030
+To client sends request information to server by calling proxy.
+
+04:55.150 --> 05:02.380
+Three proxy sends user request information to Linux kernel space and sends it to server.
+
+05:04.320 --> 05:11.820
+For server processes, user requests and returns, the processing results to clients proxy through the
+
+05:11.820 --> 05:14.130
+binder driver of the Linux kernel.
+
+05:15.550 --> 05:19.460
+And five client receives the return result from server.
+
+05:20.260 --> 05:23.110
+So here's a part of binder implementation with Java.
+
+05:25.570 --> 05:32.020
+Intent messaging is an asynchronous communication framework, build on top of binder.
+
+05:33.230 --> 05:40.100
+And intent is a messaging object that can be used to request an action from another app component,
+
+05:40.910 --> 05:44.940
+although intense, facilitate enter component communication in several ways.
+
+05:45.470 --> 05:48.350
+There are three fundamental use cases.
+
+05:49.860 --> 05:51.120
+Starting an activity.
+
+05:52.000 --> 05:58.930
+So an activity represents a single screen in the app, you can start a new instance of an activity by
+
+05:58.930 --> 06:06.100
+passing an intent to start activity, then the intent describes the activity and carries the necessary
+
+06:06.100 --> 06:06.460
+data.
+
+06:08.630 --> 06:09.620
+Starting a service.
+
+06:11.290 --> 06:16.880
+A service is a component that performs operations in the background without a user interface.
+
+06:17.500 --> 06:23.890
+Starting with Android 5.0 and later you can start a service with job scheduler.
+
+06:25.910 --> 06:27.350
+Delivering a broadcast.
+
+06:28.670 --> 06:35.870
+So broadcast is a message that any app can receive, the system delivers broadcasts for a system event,
+
+06:36.140 --> 06:39.430
+including system boot and charging initialization.
+
+06:40.220 --> 06:47.090
+You can deliver a broadcast to other apps just by passing an intent to send broadcast or send order
+
+06:47.090 --> 06:48.080
+to broadcast.
+
+06:48.990 --> 06:57.060
+Now, an intense filter is an expression in Android manifest files that'll specify the type of intense
+
+06:57.060 --> 06:59.130
+the component would like to receive.
+
+06:59.790 --> 07:05.340
+For instance, by declaring an intent filter for an activity, you make it possible for other apps to
+
+07:05.340 --> 07:09.180
+directly start your activity with a certain kind of intent.
+
+07:09.890 --> 07:14.340
+So let's have a look at some intent actions from the SDK folder.
+
+07:15.790 --> 07:19.450
+So when you go to Android Studio Open SDK manager.
+
+07:20.530 --> 07:23.500
+Copy the SDK location and then go to this folder.
+
+07:26.420 --> 07:29.930
+And under the platforms folder, Open Android 30.
+
+07:31.590 --> 07:36.770
+Now, there is an activity actions file under this data folder.
+
+07:37.870 --> 07:38.890
+So if you open it.
+
+07:40.120 --> 07:47.320
+You can see a list and there are lots of intent actions here that we can use an Android application.
+
+07:48.700 --> 07:57.100
+So some intense actions or for application error, for run search, set alarms at wallpaper and many
+
+07:57.100 --> 07:57.430
+more.
+
+07:59.170 --> 08:05.920
+So broadcast receivers are components that allow apps to receive notifications from other apps and from
+
+08:05.920 --> 08:06.820
+the system itself.
+
+08:07.910 --> 08:15.530
+So with these apps can react to events internal initiated by their apps or initiated by the operating
+
+08:15.530 --> 08:22.940
+system, and they're generally used to update user interfaces, start services, update content and
+
+08:23.240 --> 08:25.180
+create user notifications.
+
+08:25.850 --> 08:29.900
+There are two ways to make a broadcast receiver known to the system.
+
+08:31.000 --> 08:34.060
+One is to declare it in the Android manifest file.
+
+08:35.000 --> 08:41.930
+And the manifest should specify an association between the broadcast receiver and an intent filter to
+
+08:41.930 --> 08:46.520
+indicate the actions of that the receiver is meant to listen for, right.
+
+08:47.440 --> 08:51.430
+Now, the other way is to create a receiver dynamically in code.
+
+08:52.890 --> 08:58.260
+The broadcast receiver in the following example logs and displays the contents of the broadcast.
+
+08:59.790 --> 09:04.080
+So let's have a look at the broadcast actions from the SDK folder.
+
+09:05.160 --> 09:08.490
+So if you go to Android Studio Open SDK manager.
+
+09:09.700 --> 09:12.280
+Copied the SDK location and go to the folder.
+
+09:15.820 --> 09:19.210
+So under the platforms folder, Open Android 30.
+
+09:21.060 --> 09:27.510
+And you'll find a file labeled Broadcast Actions, which is under the data folder.
+
+09:28.570 --> 09:29.500
+So open it up.
+
+09:31.480 --> 09:40.570
+Now, some broadcast actions will be for Bluetooth, hardware input, wi fi, power save and as you
+
+09:40.570 --> 09:41.530
+can see, many more.
+
+09:43.710 --> 09:50.070
+And as you look through the list, you can see that these actions are notifications that affect all
+
+09:50.070 --> 09:54.480
+apps, so that means that they're sent to all apps, right?

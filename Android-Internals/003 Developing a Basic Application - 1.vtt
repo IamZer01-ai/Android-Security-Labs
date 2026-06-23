@@ -1,0 +1,259 @@
+WEBVTT
+
+00:01.360 --> 00:07.420
+Now, in the previous lecture, we created an Android virtual device to run and simulate an application.
+
+00:08.300 --> 00:13.700
+So you know what that means, we are now ready to develop a basic quiz game map.
+
+00:15.240 --> 00:21.540
+This will, of course, help you better understand the structure of a mobile app, but it will also
+
+00:21.540 --> 00:25.740
+teach you the different components of Android apps in general.
+
+00:27.650 --> 00:28.370
+So let's start.
+
+00:29.290 --> 00:34.090
+Go to Android studio, start a new Android project.
+
+00:37.390 --> 00:42.110
+Now, of course, there are different types of activities for phones and tablets.
+
+00:42.850 --> 00:45.880
+Well, just select an empty activity and click next.
+
+00:48.030 --> 00:49.980
+Now, what to call the application.
+
+00:52.320 --> 00:54.750
+And I'll develop it with Java.
+
+00:56.720 --> 01:03.680
+Now, you can, of course, select the SDK here for whatever Android version that you want to use.
+
+01:05.110 --> 01:11.800
+Now, before selecting it, just be sure that you've downloaded it and it is available on your computer.
+
+01:12.850 --> 01:13.110
+All right.
+
+01:13.120 --> 01:16.240
+So let's look at the SDK manager before creating a project.
+
+01:17.750 --> 01:20.410
+Click on Configure on the bottom right corner.
+
+01:22.080 --> 01:27.630
+Select the lowest version of Android, your app will support in the minimum SDK field.
+
+01:28.780 --> 01:34.510
+Now, before using any Android version, we should install its SDK platform package.
+
+01:36.440 --> 01:46.960
+So I have SDK packages for Android nine with twenty eight API level and Android 10 are with 30 API levels.
+
+01:48.290 --> 01:53.380
+So as I said before, we can use one of the Android versions, eight, nine or 10 throughout the course,
+
+01:53.390 --> 02:00.500
+so why don't we just go ahead and install Android 10 queue version with 29 API levels?
+
+02:01.530 --> 02:04.470
+And I can select the checkbox and click, OK?
+
+02:06.510 --> 02:10.070
+And I mean, these components will be installed, OK?
+
+02:11.880 --> 02:14.280
+And you got to wait for a little bit.
+
+02:18.250 --> 02:19.670
+All right, so finish.
+
+02:21.010 --> 02:25.300
+So now we have the SDK package for Android version 10 Q.
+
+02:26.800 --> 02:30.460
+And we can go back and continue where we left off.
+
+02:32.500 --> 02:35.710
+So I selected the minimum SDK for the project.
+
+02:36.780 --> 02:38.040
+And finish.
+
+02:39.860 --> 02:45.980
+And bump, bam, just like that Android studio main window opens.
+
+02:47.640 --> 02:52.050
+Now, you may remember that we examined the file structure of an application before.
+
+02:53.230 --> 03:01.150
+Now, if this is the main activity, it's the entry point for your app, so when you build and run your
+
+03:01.150 --> 03:07.090
+app, the system launches an instance of this activity and loads its layout.
+
+03:09.650 --> 03:15.260
+So under the red folder, there's an Excel file defining the layout for the activities user interface.
+
+03:16.830 --> 03:19.170
+Let's first create a user interface.
+
+03:21.880 --> 03:27.800
+So this is the default layout and TextView with a split view in the upper right corner.
+
+03:27.820 --> 03:30.520
+We can edit the user interface on the XML file.
+
+03:33.950 --> 03:43.280
+Now, change the layout to relative layout, and it is a view group that displays child views in relative
+
+03:43.280 --> 03:44.060
+positions.
+
+03:45.160 --> 03:51.760
+So we'll delete the default TextView, I'm going to add buttons and text fields in the design section.
+
+03:53.780 --> 03:59.840
+So first of all, add a button and add an attribute to a line at the bottom.
+
+04:02.810 --> 04:03.920
+And I'll click true.
+
+04:05.650 --> 04:11.770
+So I want to change the size of the button and create four buttons just like this so I can copy and
+
+04:11.770 --> 04:14.380
+paste to create the same buttons.
+
+04:16.620 --> 04:18.600
+Now add to Texas.
+
+04:19.580 --> 04:22.370
+One for the score, one for the questions.
+
+04:24.240 --> 04:29.100
+I'll also add an attribute for this to a line at the top.
+
+04:30.210 --> 04:31.440
+And quick to.
+
+04:33.580 --> 04:35.350
+I'll add another TextField.
+
+04:37.050 --> 04:39.870
+Now we're going to need a larger area for questions.
+
+04:41.240 --> 04:46.490
+So let's say I add an attribute layout a parent top.
+
+04:48.050 --> 04:52.250
+I'll center this horizontally, but let's change it on the XML side.
+
+04:56.360 --> 04:58.490
+So this is the text for you that I want to change.
+
+04:59.550 --> 05:02.070
+This is how I add an attribute in the code.
+
+05:07.140 --> 05:13.230
+Now it's in the center, so let's add a margin to left for this TextView.
+
+05:19.730 --> 05:21.220
+All right, that's a little better now.
+
+05:24.060 --> 05:28.260
+So we can now give some names for these buttons and text views.
+
+05:32.370 --> 05:34.640
+Buttons will be the answers.
+
+05:48.430 --> 05:52.300
+All right, so now we can create functions in the main activity file.
+
+05:55.590 --> 05:57.240
+First, define buttons.
+
+06:00.550 --> 06:03.250
+So we need to import four button.
+
+06:07.230 --> 06:12.030
+And define text views as score and questions.
+
+06:14.550 --> 06:18.050
+Now we'll create the activities in the uncreate method.
+
+06:19.450 --> 06:26.200
+So when an activity first calls or launches, then the uncreate method is responsible for creating the
+
+06:26.200 --> 06:26.770
+activity.
+
+06:30.940 --> 06:36.460
+Now, here's the fine view by IED method, and it'll return a few object.
+
+06:37.910 --> 06:41.780
+In fact, we call all the objects using this method.
+
+06:48.800 --> 06:50.870
+And these objects should be TextView.
+
+06:54.090 --> 07:01.320
+Now, to specify an action when the button is pressed, will set a click listener on the button objects
+
+07:01.800 --> 07:04.230
+with the set on Click Listener Method.
+
+07:05.810 --> 07:12.020
+So if you press enter while you create a new listener, Android studio will autocomplete the rest of
+
+07:12.020 --> 07:12.590
+the function.
+
+07:15.490 --> 07:19.900
+So now we can create this method for all buttons, all the answer buttons.
+
+07:23.950 --> 07:30.520
+Now, before completing these methods, let's let's first create a new Java class for the questions.
+
+07:32.200 --> 07:35.770
+So, right, click on the project and create Java class.
+
+07:41.030 --> 07:43.730
+Now, let's define a string array that will.
+
+07:44.650 --> 07:45.910
+Keep the questions.
+
+07:47.540 --> 07:48.050
+And.
+
+07:49.270 --> 07:52.220
+I'll create some questions about Android versions.
+
+07:52.240 --> 07:52.900
+What do you think?
+
+07:56.400 --> 07:59.070
+Next, I'll create another array for the choices.
+
+08:08.330 --> 08:13.480
+And I'll mix the order of the choices for each different question.
+
+08:15.750 --> 08:20.110
+And create the last array that will keep the correct answers in order.
+
+08:23.810 --> 08:28.480
+I recall both questions and answers will need to create methods that will return them.
+
+08:40.920 --> 08:43.800
+So I'll create them for all answers and choices.
+
+08:50.860 --> 08:56.440
+So as you can see here, we created a two dimensional array for choices to match questions and answers.
+
+08:57.630 --> 09:03.840
+I'm not going to really dive too deeply into this topic because it's not really our subject now.

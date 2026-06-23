@@ -1,0 +1,193 @@
+WEBVTT
+
+00:01.660 --> 00:04.330
+So in a basic sense, apps are designed.
+
+00:05.280 --> 00:13.110
+In order to run either directly on the platform for which they're designed on top of a smart devices
+
+00:13.110 --> 00:17.640
+mobile browser or even by mixing the two.
+
+00:19.220 --> 00:25.880
+So in this lecture, we're going to define characteristics that qualify an app for its respective place
+
+00:25.880 --> 00:31.700
+in mobile app taxonomy, as well as discuss the differences for each variation.
+
+00:34.240 --> 00:35.860
+Let's have a look at native apps.
+
+00:37.080 --> 00:43.470
+So mobile operating systems, including Android and iOS, they come with a software development kit
+
+00:43.470 --> 00:48.870
+or SDK in order to develop applications specific to the OS.
+
+00:49.750 --> 00:57.400
+A software development kit, or SDK, is a collection of software development tools in one install package,
+
+00:58.180 --> 01:03.520
+such applications are referred to as native to the system for which they've been developed.
+
+01:04.920 --> 01:11.400
+So when discussing an app, the general assumption is that it is a native app implemented in a standard
+
+01:11.400 --> 01:19.350
+programming language for the respective operating system, objective C or SWIFT for iOS and Java or
+
+01:19.350 --> 01:21.090
+Kotlin for Android.
+
+01:22.810 --> 01:29.830
+Now, there is some ambiguity that exists when discussing native apps for Android as a platform provides
+
+01:29.920 --> 01:32.250
+to different development kids.
+
+01:32.830 --> 01:37.270
+So there's the Android SDK and Android SDK.
+
+01:38.920 --> 01:42.880
+SDK, which is based on Java and Kotlin programming languages.
+
+01:43.540 --> 01:46.120
+Well, this is developed for developing apps.
+
+01:46.570 --> 01:56.290
+The Indic or Native Development Kit is a C C++ development kit used for developing binary libraries
+
+01:56.290 --> 02:00.280
+that can directly access lower level APIs.
+
+02:01.410 --> 02:07.560
+So it's possible to develop C and C++ apps using the Android native development kit.
+
+02:09.120 --> 02:15.050
+Now, the most obvious downside of native apps is that they target only one specific platform.
+
+02:15.370 --> 02:15.690
+Right.
+
+02:16.570 --> 02:23.050
+To build the same app for both Android and iOS, one needs to maintain two independent code bases or
+
+02:23.080 --> 02:30.580
+maybe introduce often complex development tools to port a single code base to two different platforms.
+
+02:32.350 --> 02:33.010
+It's up to you.
+
+02:35.300 --> 02:42.680
+Web apps, so mobile web apps are Web sites designed to look and feel like a native app.
+
+02:44.170 --> 02:51.040
+These apps run on top of a devices browser and are usually developed in HTML5, much more like a modern
+
+02:51.040 --> 02:51.730
+Web page.
+
+02:53.190 --> 02:58.230
+While jerricans may be created to parallel the same feel of accessing a native app.
+
+02:59.210 --> 03:03.710
+However, these icons are essentially the same as a browser bookmark.
+
+03:04.580 --> 03:08.750
+Simply opening the default Web browser to load the referenced Web page.
+
+03:09.790 --> 03:15.790
+The biggest advantage is reduced development and maintenance costs associated with a single code base,
+
+03:16.360 --> 03:22.900
+as well as enabling developers to distribute updates without engaging the platform of specific app stores.
+
+03:25.200 --> 03:26.370
+Hybrid apps.
+
+03:27.670 --> 03:34.120
+So hybrid apps work across multiple platforms and behave like native apps.
+
+03:35.150 --> 03:41.240
+So a hybrid app is essentially a combination of a native app and a Web app, although this type of app
+
+03:41.240 --> 03:46.940
+can be installed on a device like a native app, it technically is a Web app.
+
+03:48.040 --> 03:54.580
+These types of apps run in an embedded Web browser, come I call Web view, and these are built with
+
+03:54.580 --> 03:59.140
+HTML access or JavaScript and run in a web, you.
+
+04:00.030 --> 04:07.220
+So here's a certainly not an exhaustive list of more popular frameworks for developing hybrid apps,
+
+04:07.650 --> 04:09.990
+you may be aware of some of them.
+
+04:10.910 --> 04:15.830
+There's a Patsy Cordova, Riak native, iconic.
+
+04:16.840 --> 04:18.070
+Jake query mobile.
+
+04:18.970 --> 04:19.990
+Google flutter.
+
+04:20.910 --> 04:21.990
+Framework seven.
+
+04:22.990 --> 04:23.950
+Native script.
+
+04:26.260 --> 04:30.430
+So now we get in a progressive web apps or PWI a.
+
+04:31.550 --> 04:37.520
+Well, these lowed like regular Web pages, but they differ from usual Web apps in several different
+
+04:37.520 --> 04:38.150
+ways, actually.
+
+04:38.660 --> 04:44.770
+For example, it's possible to work offline and access mobile device hardware is possible.
+
+04:46.980 --> 04:53.820
+Usually or traditionally, it's only available to native mobile apps, right, but they're built using
+
+04:53.820 --> 05:00.540
+common web technologies, including HTML access and JavaScript progressive just means that it works
+
+05:00.540 --> 05:06.810
+for every user, regardless of browser choice using progressive enhancement principles.
+
+05:08.340 --> 05:15.660
+So Speedway's combine different open standards of the Web offered by modern browsers to provide benefits
+
+05:15.660 --> 05:17.760
+of rich mobile experiences.
+
+05:19.090 --> 05:25.780
+A Web app manifest, which is a simple Jason file, can be used to configure the behavior of the app
+
+05:25.780 --> 05:27.070
+after installation.
+
+05:28.390 --> 05:32.860
+And it will specify the name of the Web application.
+
+05:33.840 --> 05:37.650
+Links to the Web app icons or image objects.
+
+05:38.720 --> 05:41.630
+The preferred Eurail to launch or open the web at.
+
+05:42.780 --> 05:44.670
+The webapp configuration data.
+
+05:46.470 --> 05:49.050
+The default orientation of the webapp.
+
+05:50.320 --> 05:55.990
+As well as the option to set the display mode, for example, the full screen.
