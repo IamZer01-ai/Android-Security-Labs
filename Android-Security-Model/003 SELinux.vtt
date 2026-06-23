@@ -1,0 +1,70 @@
+WEBVTT
+
+00:01.210 --> 00:09.400
+Security enhanced Linux or S.E Linux is a security architecture for Linux systems that allows administrators
+
+00:09.400 --> 00:12.340
+to have more control over who can access the system.
+
+00:13.790 --> 00:15.590
+As part of the Android security model.
+
+00:16.640 --> 00:25.250
+Android uses security enhanced Linux to enforce mandatory access control Mac over all processes.
+
+00:26.180 --> 00:30.200
+Even processes running with root or super user privileges.
+
+00:32.410 --> 00:40.960
+With AC Linux, Android can better protect and confine system services, control access to application
+
+00:40.960 --> 00:48.280
+data and system logs, as well as reduce the effects of malicious software and protect users from potential
+
+00:48.280 --> 00:50.770
+flaws in code on mobile devices.
+
+00:53.400 --> 00:57.030
+So I see Linux operates on the principle of default denial.
+
+00:57.720 --> 01:02.010
+In other words, anything not explicitly allowed is denied.
+
+01:03.410 --> 01:06.290
+As he reneges can operate in two global moat's.
+
+01:07.280 --> 01:12.470
+Permissive mode in which permission denials are logged, but not enforced.
+
+01:14.000 --> 01:15.290
+Enforcing Moad.
+
+01:16.240 --> 01:21.400
+In which permission denials are both logged and enforced.
+
+01:22.880 --> 01:29.450
+So Android includes Essy Linux in enforcing mode and a corresponding security policy.
+
+01:30.730 --> 01:38.660
+Enforcing mode disallowed actions are prevented and all attempted violations are logged by the colonel.
+
+01:39.310 --> 01:46.930
+The policy can only be changed by an administrator and users cannot override or bypass it in order to,
+
+01:46.930 --> 01:50.410
+for example, grant everyone access to their own files.
+
+01:51.560 --> 01:56.420
+As Equinix has been integrated in the mainline kernel for more than 10 years.
+
+01:57.620 --> 02:04.400
+So as a version four out three, Android integrates a modified SC Linux version from the security enhancements
+
+02:04.400 --> 02:08.090
+for Android or C Android project in Android.
+
+02:09.200 --> 02:16.730
+So I see Linux's used to isolate core system demons and user applications in different security domains
+
+02:16.760 --> 02:21.350
+and to define different access policies for each domain.

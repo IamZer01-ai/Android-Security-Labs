@@ -1,0 +1,85 @@
+WEBVTT
+
+00:02.370 --> 00:07.770
+So Android leverages Linux user management to isolate apps.
+
+00:09.360 --> 00:15.300
+Yeah, so this approach is different from user management in traditional Linux environments where multiple
+
+00:15.300 --> 00:17.880
+apps are often run by the same user.
+
+00:19.930 --> 00:26.200
+But here, Android creates a unique eweida for each Android app and then runs the app in a separate
+
+00:26.200 --> 00:33.220
+process, so consequently each app can access its own resources only.
+
+00:34.250 --> 00:37.100
+And this protection is enforced by the Linux kernel.
+
+00:38.280 --> 00:42.900
+Generally, apps are assigned UID is in the range of 10000 and.
+
+00:43.790 --> 00:46.460
+Ninety nine thousand nine hundred ninety nine.
+
+00:48.850 --> 00:51.970
+Android apps receive a username based on their UID.
+
+00:53.050 --> 01:03.160
+For example, the app with UID ten thousand one hundred eighty eight receives this username, you zero
+
+01:03.160 --> 01:05.950
+underscore a one hundred eighty eight.
+
+01:07.420 --> 01:15.070
+And if the permissions and app requests are granted, the corresponding group ID is then added to the
+
+01:15.070 --> 01:16.270
+apps process.
+
+01:17.740 --> 01:20.130
+So let's have a look at how sandboxing works.
+
+01:21.120 --> 01:24.240
+So imagine you're downloading apps from Google Play.
+
+01:25.320 --> 01:32.220
+These apps are executed in the Android application sandbox, which separates the app data and code execution
+
+01:32.220 --> 01:34.810
+from the other apps on the device, right.
+
+01:35.280 --> 01:37.740
+So the separation adds a layer of security.
+
+01:40.310 --> 01:46.150
+Now, applications run under well-defined and constant UID.
+
+01:47.320 --> 01:53.590
+Android does not have the traditional Etsy slash password file.
+
+01:54.460 --> 02:03.820
+And it's just the are statically defined in the Android filesystem config header file advocation uid
+
+02:03.820 --> 02:09.160
+is are also written to the data system packages list file.
+
+02:10.570 --> 02:14.830
+Additionally, each application is given a dedicated data directory.
+
+02:15.770 --> 02:19.820
+Which only has permission to read and write to.
+
+02:21.620 --> 02:30.570
+If your applications are isolated or sandboxing both at the process level by having each run in a dedicated
+
+02:30.570 --> 02:35.490
+process and add the file level by having a private data directory.
+
+02:36.590 --> 02:42.590
+So this creates a kernel level application sandbox, which applies to all applications, regardless
+
+02:42.590 --> 02:48.050
+of whether they're executed in a native or virtual machine process.

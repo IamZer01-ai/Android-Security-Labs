@@ -1,0 +1,61 @@
+WEBVTT
+
+00:01.490 --> 00:04.400
+Now, because Android applications are sandbox.
+
+00:05.210 --> 00:11.240
+They can access only their own files and any world accessible resources on the device.
+
+00:12.370 --> 00:16.230
+Such a limited application wouldn't be very interesting, though, would it?
+
+00:17.760 --> 00:27.150
+So Android can grant additional and fine tuned access rights to applications in order to allow richer
+
+00:27.150 --> 00:28.140
+functionality.
+
+00:29.400 --> 00:31.830
+Those access rights are called permission.
+
+00:33.110 --> 00:40.040
+And they can control access to hardware devices and Internet connectivity data or services.
+
+00:41.300 --> 00:45.350
+But by default, applications are given very few privileges.
+
+00:46.340 --> 00:55.280
+So that means they have to request fine-tuned or granular permissions in order to interact with systems,
+
+00:55.280 --> 00:59.550
+services, hardware, devices or even other applications.
+
+01:00.960 --> 01:08.240
+So applications can request permissions by defining them in the Android manifest XML file.
+
+01:09.840 --> 01:16.620
+So at application install time, Android inspects a list of requested permissions and decides whether
+
+01:16.620 --> 01:17.550
+to grant them or not.
+
+01:18.280 --> 01:21.090
+Then, once granted, permissions cannot be revoked.
+
+01:22.150 --> 01:26.140
+And they are available to the application without any more additional.
+
+01:27.060 --> 01:28.020
+Confirmation.
+
+01:30.710 --> 01:37.640
+Now, developers who want their apps to share a common sandbox can sidestep sandboxing, so when two
+
+01:37.640 --> 01:39.770
+apps are signed with the same certificate.
+
+01:40.850 --> 01:50.390
+And explicitly share the same user I.D., having a shared user I.D. in their Android manifesto XML files.
+
+01:51.450 --> 01:54.360
+Each can access the other's data directory.
