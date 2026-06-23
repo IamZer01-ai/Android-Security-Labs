@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.520 --> 00:07.270
+After analyzing source code manually, automated tools allow the tester to focus on the more complicated
+
+00:07.270 --> 00:10.570
+business logic for efficient static analysis.
+
+00:12.130 --> 00:17.350
+There are several open source tools for automated security analysis of an epic.
+
+00:18.790 --> 00:25.390
+We'll use my BSF for this purpose, Samaa BSF is a powerful security assessment framework.
+
+00:25.810 --> 00:29.980
+It's capable of performing static and dynamic analysis.
+
+00:31.450 --> 00:34.630
+So why don't we, uh, why don't we get started?
+
+00:35.290 --> 00:39.880
+All right, so just open up a terminal screen and switch the user to route.
+
+00:40.970 --> 00:43.790
+Change directory to mob S.F. folder.
+
+00:45.720 --> 00:46.680
+This files.
+
+00:48.460 --> 00:52.840
+OK, so now we need to run the run that S.H. file.
+
+00:54.640 --> 00:57.220
+And it's running of this address now, so let's open it.
+
+00:58.650 --> 01:00.870
+Click on the button, upload and analyze.
+
+01:01.900 --> 01:04.150
+So, like the APK file and open it.
+
+01:05.640 --> 01:07.860
+So right now, it's analyzing the epic file.
+
+01:09.080 --> 01:11.840
+We can look at the info messages on the screen.
+
+01:12.800 --> 01:19.490
+And these are the steps we follow while manually analyzing the source code, so first it unzips KPK
+
+01:19.490 --> 01:27.230
+file and it then reads the Android manifest while checking the code signing certificate, the compiling
+
+01:27.230 --> 01:28.400
+to Java source code.
+
+01:29.590 --> 01:32.480
+So it may take a moment or two.
+
+01:36.190 --> 01:38.940
+All right, so it's completed, let's have a look at the results.
+
+01:40.320 --> 01:44.130
+So in the first section, there's information about the APK file.
+
+01:45.090 --> 01:51.780
+Some of them are file names and sizes, Android version, package, name, main activity, etc. from
+
+01:51.780 --> 01:56.310
+the decompiled code section, you can download any file and code format.
+
+01:57.300 --> 02:03.810
+So when we decompiled the APK file with the bytecode viewer, there was no assembly code, so we'll
+
+02:03.810 --> 02:06.450
+first look at the Android manifest file.
+
+02:08.470 --> 02:12.580
+As you can see, it's in the decoded form, so we'll go back.
+
+02:14.450 --> 02:15.920
+Click on View Source.
+
+02:17.620 --> 02:22.000
+And we can search for basically any keyword in the source code.
+
+02:23.420 --> 02:25.640
+So what do we search for password?
+
+02:27.060 --> 02:31.440
+And we can see the Java files that contain the password.
+
+02:32.640 --> 02:33.840
+Let's open one of them.
+
+02:34.810 --> 02:35.830
+Scroll down a bit.
+
+02:37.440 --> 02:43.860
+And here's where you can see a method where the password string is defined.
+
+02:46.110 --> 02:48.890
+Right, so we'll go back to the scan results.
+
+02:50.250 --> 02:52.410
+Let's look at the assembly code.
+
+02:53.440 --> 02:54.970
+Search for password again.
+
+02:58.960 --> 02:59.680
+Oh, you know, I.
+
+03:00.880 --> 03:07.680
+I this this error here is due to mob S.F., but right now, this here is not really important.
+
+03:07.690 --> 03:12.040
+So you can view the assembly code by downloading it as a zip file.
+
+03:14.030 --> 03:16.040
+And you can download the source code here.
+
+03:18.130 --> 03:19.960
+So let's continue with the titles.
+
+03:21.630 --> 03:28.200
+So the signers certificate, we can check if the HBK is signed or not, and what the signature algorithm
+
+03:28.650 --> 03:33.090
+is, you know, hash algorithms are and more.
+
+03:36.160 --> 03:42.470
+As you can see in his description, the application is vulnerable to Janna's vulnerability because of
+
+03:42.470 --> 03:43.880
+the signature scheme.
+
+03:46.710 --> 03:49.440
+So what do we have a look at the permissions now?
+
+03:49.460 --> 03:53.880
+You remember we saw these permissions in the Android manifest file.
+
+03:54.710 --> 03:59.120
+And this table will show us the status and the risks of them.
+
+04:01.050 --> 04:02.180
+And we'll go to the next one.
+
+04:04.530 --> 04:09.600
+So there's no reason for binary analysis API and Brownsville activities.
+
+04:12.300 --> 04:15.270
+So let's look at the analysis of the manifest file.
+
+04:17.240 --> 04:23.450
+And yet again, as we saw in the manual analysis, there are dangerous options in the manifest file.
+
+04:24.710 --> 04:30.470
+Debugger will allow backup options and exported activities that are shared with other apps.
+
+04:30.980 --> 04:31.820
+Let's continue.
+
+04:34.490 --> 04:37.160
+There's no result for code and file analysis.
+
+04:38.280 --> 04:40.290
+So let's go to malware analysis.
+
+04:41.380 --> 04:45.430
+If your kid gives you information about how an app was made.
+
+04:46.720 --> 04:54.880
+So I can look at an Android app or X File and detect the fingerprints of several different compilers.
+
+04:56.760 --> 04:58.090
+All right, good, let's continue.
+
+04:58.830 --> 05:00.900
+So there's no information for these sections.
+
+05:02.590 --> 05:08.650
+These are trackers in the application, they can collect a range of data from the user, including users,
+
+05:08.650 --> 05:12.340
+keystrokes, location, web browsing, personal data.
+
+05:14.590 --> 05:21.160
+And here there's a string's list under the reconnaissance section of the result.
+
+05:23.270 --> 05:25.700
+So let's look at the hardcoded secrets.
+
+05:28.380 --> 05:32.010
+These are the fields where it's possible to find a hard coded values.
+
+05:33.720 --> 05:39.600
+Under the component section, you can view the lists containing application components such as activities,
+
+05:39.810 --> 05:43.350
+services, receivers, providers, libraries, etc..
+
+05:44.610 --> 05:50.880
+And you can also export the scan results that have the PDF format from here.
+
+05:53.180 --> 05:58.100
+Let's download the report that way, we can look at the results later when we need to.
+
+05:59.240 --> 06:00.350
+Say file, OK?

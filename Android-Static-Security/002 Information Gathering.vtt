@@ -1,0 +1,187 @@
+WEBVTT
+
+00:00.470 --> 00:05.460
+So on the previous lecture, we decompiled the APK file of the insecure bank application.
+
+00:06.290 --> 00:12.260
+So that means in this section we will learn some approaches and the basics of analyzing an Android app
+
+00:12.710 --> 00:15.290
+and what to look for in the source code.
+
+00:16.640 --> 00:22.040
+So we'll start by analyzing the app's manifest Android manifest, not X amount.
+
+00:22.760 --> 00:28.130
+So this is the binary form of the Android manifest on XML file.
+
+00:29.100 --> 00:34.890
+Now, there is a decoded form of this file under the decoded resources.
+
+00:36.430 --> 00:41.830
+And this file is an important part of the application because it provides data about the application
+
+00:41.830 --> 00:48.500
+structure and metadata, so its components are here as well as the requirements.
+
+00:48.970 --> 00:51.580
+Notice how it's segmented into different sections.
+
+00:52.030 --> 00:56.470
+The first few lines will contain the different user permissions declared by the application.
+
+00:57.540 --> 01:03.570
+These will always be variable and dependent on the app, but it's always good practice to make sure
+
+01:03.570 --> 01:09.870
+the app isn't requesting more positions or permissions than it should have or or needs to use.
+
+01:11.600 --> 01:18.590
+For example, we've seen many apps request location permissions without even having a feature that requires
+
+01:18.590 --> 01:19.880
+the user location.
+
+01:22.350 --> 01:28.770
+And of course, this usually ends up in some kind of user personal information being disclosed and in
+
+01:28.770 --> 01:32.500
+most cases it's not even done intentionally by the developer.
+
+01:32.520 --> 01:38.790
+To be honest, I'll show you some other important things to look out for in the manifest file are the
+
+01:38.790 --> 01:43.320
+debugger bowl and the allowed back up flags.
+
+01:44.480 --> 01:51.890
+So the first one refers to the app being in debug mode, meaning it's possible to attach a debugger
+
+01:51.890 --> 01:56.450
+to the applications process and execute arbitrary code.
+
+01:58.250 --> 02:05.450
+The second flag allowed back up defines whether application data can be backed up and restored by a
+
+02:05.450 --> 02:09.140
+user who has enabled U.S. be debugging.
+
+02:10.520 --> 02:17.450
+So this means that hackers connecting to a device via ADB can easily obtain any application data that
+
+02:17.450 --> 02:22.800
+is stored on the device, including personal data on private storage.
+
+02:23.600 --> 02:30.830
+As we look deeper into the insecure bank app, it has both of these flags enabled.
+
+02:32.800 --> 02:38.830
+So the manifest may also include exported activities and content providers.
+
+02:39.940 --> 02:46.210
+These allow external applications to access data in the application, which is why it's always important
+
+02:46.210 --> 02:54.340
+to check for activities listed as true, because these can potentially leak user data to other applications.
+
+02:55.240 --> 02:57.370
+These are the activities that are exportable.
+
+02:58.130 --> 03:02.170
+Next thing you want to look for is hard coded credentials.
+
+03:02.980 --> 03:09.010
+That is anything hard coded in an app such as passwords, username session, Tolkan, secret keys,
+
+03:09.010 --> 03:09.640
+etc..
+
+03:10.500 --> 03:18.960
+Attackers will often easily access this information, or at least they can here in this app, because
+
+03:18.960 --> 03:24.330
+this is our example and it's designed to be vulnerable.
+
+03:24.870 --> 03:26.400
+So, of course, it's no exception.
+
+03:27.150 --> 03:35.490
+But I'll show you I'll search from all classes and I'll select strings as my search string type.
+
+03:36.770 --> 03:39.350
+And first, let's search for password and username.
+
+03:40.680 --> 03:47.970
+So by analyzing the source code, we can see the methods related to password and username, and that
+
+03:47.970 --> 03:49.250
+way we'll get an idea.
+
+03:50.120 --> 03:52.970
+How to bypass the login mechanism?
+
+03:55.290 --> 04:04.200
+So now let's search for a secret, because it will likely reveal, well, secrets, but basically that
+
+04:04.200 --> 04:05.870
+means sensitive values.
+
+04:07.250 --> 04:08.450
+So we'll open this class.
+
+04:09.800 --> 04:15.980
+Now, as you can see, it shows some valuable information here, including an initialization vector
+
+04:16.340 --> 04:22.040
+for one of the utilized cryptography methods and the crypto key.
+
+04:23.730 --> 04:29.550
+So if an application is importing Java, extract crypto cipher.
+
+04:30.830 --> 04:35.980
+That indicates that the application will be performing some kind of cryptographic operation, right?
+
+04:37.570 --> 04:42.970
+So you should also note that if you want to search a library, you should change the type of the search
+
+04:42.970 --> 04:46.170
+string, otherwise you're not going to be able to find anything.
+
+04:48.250 --> 04:51.010
+You can select X for this one.
+
+04:58.190 --> 05:03.230
+Now, if we search the crypto library, the results are displayed here.
+
+05:04.960 --> 05:09.100
+For example, by looking at the cyphers get instance function.
+
+05:10.150 --> 05:14.140
+We can determine a cryptographic algorithm being used.
+
+05:15.870 --> 05:21.840
+Now to find out if the application uses a secure connection on the Web, we can just search for SSL.
+
+05:27.900 --> 05:29.640
+Now let's analyze Web views.
+
+05:31.100 --> 05:39.650
+So Web views are an embeddable browser, so these browsers are embedded and that way native application
+
+05:39.860 --> 05:43.310
+can use the embeddable browser to display Web content.
+
+05:44.300 --> 05:49.130
+They might not be implemented in every application, but when they are, they certainly can provide
+
+05:49.130 --> 05:50.300
+a risky attack vector.
+
+05:52.120 --> 05:58.510
+And one of the important parameters to test on Web views is right in here, the clear cache method.
+
+05:59.750 --> 06:07.610
+It clears the web, you caches from the client device so this can mitigate issues relating to sensitive
+
+06:07.610 --> 06:09.770
+data stored on the local filesystem.

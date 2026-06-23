@@ -1,0 +1,103 @@
+WEBVTT
+
+00:01.050 --> 00:10.680
+So according to the Oxford English Dictionary, obfuscation denotes the action of making something obscure,
+
+00:10.710 --> 00:13.080
+unclear or unintelligible.
+
+00:14.330 --> 00:15.560
+Now in software.
+
+00:16.580 --> 00:24.230
+The obfuscation of code is the process of modifying an executable so that it is no longer useful to
+
+00:24.470 --> 00:29.960
+unauthorized party such as hackers, but remains fully functional.
+
+00:31.220 --> 00:39.190
+So right now, we're going to focus on obfuscation techniques and how to code obfuscate in Android applications.
+
+00:39.980 --> 00:42.440
+So why do you suppose we need to obfuscate?
+
+00:43.790 --> 00:50.720
+Well, anyone who has been working in Java or maybe just knows a thing or two about it can easily picture
+
+00:51.170 --> 00:55.010
+how your app is coded once an app is unpacked.
+
+00:55.930 --> 01:02.830
+The WiFi location won't guarantee code security, this process would give hackers a hard time reverse
+
+01:02.830 --> 01:04.440
+engineering your Android app.
+
+01:04.690 --> 01:10.630
+It's still advisable, though, to add layers of security to your code, such as implementing encryption,
+
+01:10.630 --> 01:14.960
+avoiding saving of credentials to device level storage and all that kind of stuff.
+
+01:16.870 --> 01:23.920
+But few techniques can be performed, obfuscations and programming, and some of them are right here
+
+01:23.920 --> 01:27.010
+as follows rename obfuscation.
+
+01:28.680 --> 01:34.710
+Which is the basic transformation that's used by many of you skaters such as Android, iOS and Java.
+
+01:35.560 --> 01:43.330
+It is done by renaming variables and method names, it uses new strings, letters, numbers, unprintable
+
+01:43.330 --> 01:47.950
+characters and invisible characters for the transformation process.
+
+01:49.750 --> 01:51.970
+And string encryption.
+
+01:53.290 --> 01:58.480
+So this way, all the strings are discoverable and readable and managed executables.
+
+01:59.630 --> 02:05.810
+Even though methods and variables are renamed, strings can be used to navigate the critical code segment
+
+02:06.230 --> 02:13.100
+by looking for string references inside binary files, therefore string encryption can be used to hide
+
+02:13.100 --> 02:15.230
+the strings in the executable file.
+
+02:16.680 --> 02:19.590
+Now, of course, there's our old friend Dommy code insertion.
+
+02:20.650 --> 02:27.370
+So inserting code segments into the executable that do not affect the logic of the main program, but
+
+02:27.370 --> 02:33.790
+I'll tell you, it's getting way harder to break by decompiled or reverse engineering the code, and
+
+02:33.790 --> 02:35.860
+it's certainly difficult to analyze.
+
+02:37.100 --> 02:44.420
+So there are many techniques just like these, so how do you obfuscate code in Android?
+
+02:45.890 --> 02:52.490
+Well, pro guard is one of the most popular optimizers and obfuscatory for Java bytecode and Android
+
+02:52.490 --> 02:52.820
+apps.
+
+02:54.480 --> 02:59.490
+It'll detect and remove unused classes, fields, methods and attributes.
+
+03:00.710 --> 03:09.290
+It optimizes byte code and removes unused instructions, it renames the remaining classes, fields and
+
+03:09.290 --> 03:12.170
+methods using short, meaningless names.
+
+03:13.620 --> 03:21.480
+So obfuscation with pro guard results in changes to filenames and to code as displayed in this screenshot.

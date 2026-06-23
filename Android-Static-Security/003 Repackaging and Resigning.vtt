@@ -1,0 +1,139 @@
+WEBVTT
+
+00:01.230 --> 00:08.640
+So let me explain something about repackaging and resigning so it's needed after making some changes
+
+00:08.640 --> 00:11.070
+to the Android manifest or bytecode.
+
+00:12.240 --> 00:19.310
+So in order to be able to modify any file that's packaged in the app, we first need to unpack the APK.
+
+00:21.000 --> 00:25.020
+So this time, let's use the EPA tool to unpack the HBK file.
+
+00:27.040 --> 00:34.630
+So first change directory to desktop, you can simply call the advocate tool with just the D argument.
+
+00:36.440 --> 00:38.870
+So A decoded the files in a folder.
+
+00:41.160 --> 00:42.510
+And let's have a look at the files.
+
+00:44.730 --> 00:47.190
+So we'll check the Android manifest file.
+
+00:48.930 --> 00:50.940
+OK, so it's decoded.
+
+00:53.050 --> 00:55.090
+Well, open the smiley folder.
+
+00:58.410 --> 01:02.760
+And here is where the decompiled source codes live.
+
+01:03.620 --> 01:11.210
+And Smiley is basically an assembler, and this is similar for the decks format used by Dalvik or Android
+
+01:11.210 --> 01:12.490
+runtime for that matter.
+
+01:13.650 --> 01:21.900
+Smiley files are created by compiling the decks files, which are the executables, and as you remember,
+
+01:21.900 --> 01:27.960
+we compile these files in the bytecode viewer and then we analyze the source code.
+
+01:29.700 --> 01:32.300
+But I know that was all the way back in the previous lecture.
+
+01:33.810 --> 01:36.450
+So let's go back to the insecure bank folder.
+
+01:38.880 --> 01:46.410
+So after making a change to a file, we then need to repack the APIC, so over this weekend, again,
+
+01:46.410 --> 01:47.880
+use the actual.
+
+01:48.770 --> 01:52.580
+This time specifying the build or b argument.
+
+01:58.470 --> 02:01.230
+OK, so now we'll run.
+
+02:02.310 --> 02:11.700
+A zip aligned tool, so zip line is an archive alignment tool that provides important optimization to
+
+02:11.730 --> 02:14.810
+Android application files or APIC files.
+
+02:16.680 --> 02:20.790
+Four numbers find the bite alignment boundaries.
+
+02:21.800 --> 02:29.800
+This must always be for which provides 32 bit alignment line or else it basically does nothing.
+
+02:31.840 --> 02:34.630
+So then we'll add the existing APIC file.
+
+02:36.500 --> 02:41.090
+We can give a full path and a name for the new APK file.
+
+02:43.980 --> 02:46.050
+OK, so now the EPA has billed.
+
+02:47.230 --> 02:50.320
+Now, the last step is to sign the RPK.
+
+02:51.720 --> 02:57.450
+But before resigning, you must first get a code signing certificate.
+
+02:58.820 --> 03:05.720
+Now, the standard Java distribution includes key tool for managing key stores and certificates, but
+
+03:05.720 --> 03:14.180
+you can create your own signing certificate and key, then add it to a new key store that you created.
+
+03:15.400 --> 03:21.160
+So one key tool, dash v, dash jenky, dash keester.
+
+03:22.240 --> 03:27.580
+And here, I'll give a name for a new store ad alias.
+
+03:30.540 --> 03:32.880
+Defined RSA as a key algorithm.
+
+03:33.840 --> 03:35.340
+Define the key size.
+
+03:36.890 --> 03:39.080
+And finally, add a validity option.
+
+03:39.990 --> 03:43.530
+And it's just an expiration date, so you can give a really big number if you want.
+
+03:44.400 --> 03:49.880
+So now create a password for the key store and now we can skip these questions.
+
+03:53.930 --> 03:57.380
+All right, so it's created a key store in the current directory.
+
+03:58.620 --> 04:01.950
+So now we're ready to sign the APK with this key.
+
+04:03.060 --> 04:09.150
+You can use a B.K. Seiner or Jar's Sinor tools to sign the RPK, your choice.
+
+04:10.590 --> 04:15.060
+Add dash ferbos parameter, a key story you created.
+
+04:16.060 --> 04:19.720
+And the location of the new APK file and Sankei.
+
+04:21.030 --> 04:22.650
+Enter the password of the key store.
+
+04:26.720 --> 04:31.340
+And just like that, EPK is signed and ready to use.

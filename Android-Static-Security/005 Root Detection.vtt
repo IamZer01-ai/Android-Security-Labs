@@ -1,0 +1,94 @@
+WEBVTT
+
+00:01.110 --> 00:09.150
+Now, if you remember, at one point earlier, I talked about recruiting basics in the setting up of
+
+00:09.150 --> 00:10.440
+the laboratory section.
+
+00:11.410 --> 00:12.210
+I'm sure you do.
+
+00:13.110 --> 00:16.980
+So in enroute device data is at risk.
+
+00:17.890 --> 00:24.820
+Including gaining access to personal information such as contact lists, emails, other data or collecting
+
+00:24.820 --> 00:26.770
+data like credentials and passwords.
+
+00:27.890 --> 00:35.870
+So with a router device, a user or a malicious program can elevate their permissions to route and circumvent
+
+00:35.870 --> 00:40.160
+this protection, giving them access to other apps, private data.
+
+00:41.600 --> 00:48.080
+So in this lecture, we're going to look at the techniques used by Android developers in order to detect
+
+00:48.080 --> 00:52.490
+if a device on which the app is running is routed or not.
+
+00:54.410 --> 00:59.960
+So you don't need me to tell you that there are probably a good number of advantages for an application
+
+01:00.170 --> 01:04.520
+to be able to detect if it's running on a router device or not.
+
+01:05.630 --> 01:11.870
+Most of the techniques we use to test an Android application require Rup permission to install various
+
+01:11.870 --> 01:16.370
+tools and hence compromise the security of the application.
+
+01:18.400 --> 01:23.110
+So why don't we begin with the most common techniques being used in the most popular applications,
+
+01:23.470 --> 01:30.160
+and that'll tell us if the device is routed now, once the device is rooted, some new files may be
+
+01:30.160 --> 01:31.620
+placed onto the device.
+
+01:32.320 --> 01:38.080
+So checking for those files and packages installed on the device is one way to find out if the device
+
+01:38.080 --> 01:39.160
+is routed or not.
+
+01:40.390 --> 01:47.140
+So super user Dot APIC, that's the most common package many apps look for in route detection.
+
+01:48.390 --> 01:52.950
+This application allows other applications to run as route on the device.
+
+01:53.940 --> 01:59.010
+So there are some specific applications which run only on bruited devices.
+
+01:59.970 --> 02:07.080
+So, of course, checking for those applications would also be a good idea to detect if the device is
+
+02:07.080 --> 02:07.500
+routed.
+
+02:07.980 --> 02:10.560
+Here's one, for example, busy box.
+
+02:11.620 --> 02:16.360
+So you may have heard a busy box, it's an application which provides a way to execute the most common
+
+02:16.360 --> 02:19.240
+Linux commands on an Android device.
+
+02:20.820 --> 02:29.940
+The other technique is executing Asou and IDI commands and looking at the UID to see if it's root.
+
+02:31.310 --> 02:37.070
+Many developers search for specific package names related to the rooting of Android devices.
+
+02:38.230 --> 02:40.300
+PM list packages.
+
+02:41.020 --> 02:45.130
+This is a command that list packages that are currently installed on the device.
