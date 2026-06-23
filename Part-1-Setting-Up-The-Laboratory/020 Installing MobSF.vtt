@@ -1,0 +1,124 @@
+WEBVTT
+
+00:01.570 --> 00:08.920
+Now, the mobile security framework is an open source framework, it's capable of performing and doing
+
+00:08.920 --> 00:10.740
+security testing of mobile apps.
+
+00:11.650 --> 00:14.410
+So let's go ahead and install mob in Akali.
+
+00:15.610 --> 00:18.340
+So go to Cali over the Web browser.
+
+00:20.780 --> 00:22.550
+Search for mobs have.
+
+00:25.350 --> 00:28.050
+Now, open a GitHub page of Möbius have.
+
+00:29.010 --> 00:30.120
+Scroll down a little bit.
+
+00:34.620 --> 00:42.150
+OK, so here we will perform a static and dynamic analysis for Android, and this is the user interface
+
+00:42.150 --> 00:42.930
+of the framework.
+
+00:44.730 --> 00:47.550
+And of course, there's documentation here, so let's go ahead and open it.
+
+00:50.250 --> 00:53.070
+So in this left hand, men, you click on requirements.
+
+00:54.270 --> 00:56.430
+And here are your requirements for Linux.
+
+00:57.890 --> 01:01.010
+So Kelly already has Gett and Python three.
+
+01:02.260 --> 01:06.670
+Let's look at the versions, open up the terminal screen.
+
+01:08.040 --> 01:14.190
+OK, first switch user to route run, get double dash version, OK?
+
+01:15.940 --> 01:17.980
+And let's also look at Python three.
+
+01:19.180 --> 01:24.370
+Great, so there's no problem, we just need to install open JDK.
+
+01:26.500 --> 01:28.900
+So we'll copy this part and paste it.
+
+01:31.100 --> 01:37.310
+Now, this package is not the updated one, so let's look at the open JDK packages to see the latest
+
+01:37.310 --> 01:38.260
+version.
+
+01:39.270 --> 01:44.130
+So we'll run Apte, search open JDK.
+
+01:45.980 --> 01:55.460
+Yeah, so here there are 11, 13, 14 versions of Open JDK, and I'll show you, I'll just install the
+
+01:55.610 --> 01:56.510
+latest version.
+
+01:57.620 --> 01:58.940
+Wait for that to finish.
+
+02:03.720 --> 02:07.650
+All right, so finally, let's copy these dependencies and run.
+
+02:09.510 --> 02:15.980
+Woops, I guess a package name was changed, so I got to replace it with a new one.
+
+02:23.090 --> 02:28.460
+OK, so I already have these dependencies, so let's continue with the installation.
+
+02:32.390 --> 02:34.430
+So first, I'll clone the repository.
+
+02:38.580 --> 02:39.660
+And wait for a bit.
+
+02:43.010 --> 02:47.210
+All right, so we got the files changed directory to my BSF.
+
+02:48.410 --> 02:49.370
+List of files.
+
+02:51.370 --> 02:56.920
+All right, so now let's run set up, so run set up, not as H.
+
+03:04.540 --> 03:07.360
+OK, installation complete.
+
+03:09.560 --> 03:13.400
+So let's run Mob F with Rundstedt S.H..
+
+03:16.770 --> 03:19.980
+All right, so it's already started after installation.
+
+03:20.890 --> 03:27.330
+So when you want to open it later, you got to remember to run the run S.H. file under its directory.
+
+03:27.850 --> 03:31.210
+So let's now go to this IP address in this port.
+
+03:32.900 --> 03:34.160
+Write it in the browser.
+
+03:35.520 --> 03:38.130
+All right, great, so it successfully installs.
+
+03:39.810 --> 03:44.760
+Now, there are separate pages for dynamic analyzer and static analyzer.
+
+03:45.700 --> 03:50.140
+So when we start analysis, we will upload an epic from here.

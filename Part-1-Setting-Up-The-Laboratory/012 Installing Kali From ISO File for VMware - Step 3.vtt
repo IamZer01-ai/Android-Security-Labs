@@ -1,0 +1,85 @@
+WEBVTT
+
+00:00.460 --> 00:05.230
+So now is the final step to run the VM and fix any problems.
+
+00:06.680 --> 00:11.520
+So we installed the calisthenic 64 bit installer image VM in the previous lecture.
+
+00:11.540 --> 00:15.990
+Now let's Boutet and just make sure everything's OK.
+
+00:16.370 --> 00:17.840
+I know it will be, don't you?
+
+00:20.500 --> 00:25.600
+OK, so we'll log in with the username and password that you set during the insulation.
+
+00:29.350 --> 00:31.270
+And welcome back.
+
+00:32.780 --> 00:38.810
+All right, so let's take a quick look at the menu of the default Xfinity desktop environment.
+
+00:39.770 --> 00:45.380
+And it is here in the upper left hand corner, and these are the default tools of Caleigh.
+
+00:48.570 --> 00:55.170
+So first of all, let's open up a terminal screen and switch the user to the router count, then this
+
+00:55.170 --> 00:58.020
+way we don't have to write the pseudo command every time.
+
+00:59.950 --> 01:03.100
+And look at the IP address assigned by the VM.
+
+01:04.560 --> 01:11.100
+So let's ping a remote system, for example, Google DNS 888 patted down eight to check the Internet
+
+01:11.250 --> 01:11.820
+connection.
+
+01:13.710 --> 01:18.870
+We received the packets, no packet loss, and we have Internet connection now.
+
+01:19.780 --> 01:24.460
+So just to double check, I open a Web browser and visit any Web site on the Internet.
+
+01:31.220 --> 01:32.260
+And it's OK now.
+
+01:34.450 --> 01:41.350
+If you are having problems with an Internet connection, just check the solutions mentioned Calli from
+
+01:41.350 --> 01:46.360
+VMware image step three, and that should help you fix a problem.
+
+01:47.280 --> 01:49.800
+Now, what about the local area network?
+
+01:50.920 --> 01:59.950
+Can the Calli 64 bit VMC, the other systems in the same network, so all paying the Calli VMware machine,
+
+01:59.950 --> 02:01.810
+the IP Tutut to.
+
+02:05.550 --> 02:13.680
+And here are the packets, so everything's OK, and that means we're ready to back again to double check.
+
+02:13.710 --> 02:19.050
+I'll go to the county VMware machine and paying the county 64 bit.
+
+02:20.310 --> 02:24.310
+Now, what was the IP of the county 64 bit machine here?
+
+02:24.330 --> 02:26.040
+It's one three three.
+
+02:26.490 --> 02:32.520
+OK, so now I'll just go to the county VMware machine and ping one three three.
+
+02:35.000 --> 02:37.130
+And sure enough, everything is OK.
+
+02:37.730 --> 02:40.790
+I love it when everybody talks to each other, Error-free.

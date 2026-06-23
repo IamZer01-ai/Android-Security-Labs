@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00.330 --> 00:07.770
+Virtual box is freely available, open source software solution runs on Windows, Linux, Macintosh
+
+00:08.010 --> 00:12.660
+and Solares hosts and supports many guest operating systems.
+
+00:13.410 --> 00:18.630
+So virtual box is deceptively simple, but it's also very powerful.
+
+00:19.180 --> 00:21.240
+Just go ahead and install it.
+
+00:21.240 --> 00:22.230
+Give it a quick look.
+
+00:24.840 --> 00:31.220
+Hey there, so I want to make a particular hands on demonstration in Windows for two particular reasons.
+
+00:32.090 --> 00:38.990
+One, I'd like to show you that the host is not critically important while preparing the lab.
+
+00:39.620 --> 00:45.980
+And secondly, I'd like the students using windows as a whole system to feel comfortable at the beginning
+
+00:45.980 --> 00:52.400
+of the course, because we're going to be using a Mac as a whole system in general for the rest of the
+
+00:52.400 --> 00:52.790
+course.
+
+00:53.790 --> 01:00.510
+So simply by using your favorite Web browser type virtual box into the address bar.
+
+01:01.480 --> 01:09.010
+You will see the official site, a virtual box is the first row of the results page, so it's virtual
+
+01:09.010 --> 01:12.050
+box dot org is the official site.
+
+01:12.310 --> 01:13.210
+So click on it.
+
+01:15.750 --> 01:16.950
+There's the download.
+
+01:18.480 --> 01:20.760
+So let's click it to see the download options.
+
+01:21.810 --> 01:25.650
+All right, so this is the latest addition when I was preparing the court.
+
+01:26.580 --> 01:34.890
+Now, there's a couple of options for the major hosts, so, by the way, what I mean about the host
+
+01:34.890 --> 01:38.940
+is that your main operating system installed on your computer.
+
+01:40.050 --> 01:43.490
+So click on the option, whichever is suitable for you right now.
+
+01:43.500 --> 01:44.490
+I'll use a windows.
+
+01:44.970 --> 01:47.820
+So I'm going to download for Windows hosts.
+
+01:48.720 --> 01:55.620
+And while downloading virtual Xbox, just scroll your mouse down a little bit and you can see that there's
+
+01:55.620 --> 01:58.760
+an extension back to it install as well.
+
+01:59.720 --> 02:07.880
+The extension PAC helps your installation support different things like USB two and three devices.
+
+02:08.300 --> 02:10.890
+It may help you to manage your installation easily.
+
+02:11.270 --> 02:12.200
+Now click on the link.
+
+02:12.380 --> 02:13.880
+All supported platforms.
+
+02:14.990 --> 02:17.570
+Wait a little bit, might not take too much time.
+
+02:19.100 --> 02:22.370
+All of it has been downloaded, go to my downloads folder.
+
+02:23.760 --> 02:26.070
+Double click on the X File.
+
+02:28.300 --> 02:31.660
+Click next, next, next.
+
+02:32.220 --> 02:37.180
+And now it will install some virtual network adapters at this phase.
+
+02:37.210 --> 02:39.310
+So click yes and install.
+
+02:40.960 --> 02:42.730
+Now it's going to be installing for a while.
+
+02:45.400 --> 02:52.240
+And there is finished I don't want you to start now, so let's uncheck the box and click finish.
+
+02:53.230 --> 03:00.550
+See, now's the time for installing an extension after installation, a virtual box, the icon has changed.
+
+03:00.570 --> 03:01.120
+You see that?
+
+03:01.870 --> 03:04.420
+So double click on it and wait for a bit.
+
+03:05.380 --> 03:05.650
+Right.
+
+03:05.680 --> 03:08.900
+So now this screen comes up, click, install.
+
+03:09.760 --> 03:16.390
+So go ahead and scroll down until the end and you'll see that I agree button it's enabled.
+
+03:16.600 --> 03:22.720
+So click on it if you agree and well, you should agree in order to use virtual box.
+
+03:22.870 --> 03:23.760
+So wait a second.
+
+03:24.670 --> 03:32.830
+OK, so now you're done, congratulations, you've installed a virtual box, so please have a look and
+
+03:32.830 --> 03:35.860
+be familiar with the menus by yourself before you start.
+
+03:42.890 --> 03:46.490
+Virtual box dog is the official site.
+
+03:48.320 --> 03:51.890
+And on the left pane, there's the download menu item.
+
+03:53.140 --> 03:57.220
+So in the downloads page, we have platform packages here.
+
+03:58.260 --> 04:05.340
+Click on OSX hosts as a link for Mac devices, quick save to start the download.
+
+04:10.420 --> 04:16.330
+When the downloads finished, double click on the installation package file, which has the dot dmg
+
+04:16.330 --> 04:16.840
+at the end.
+
+04:19.040 --> 04:26.060
+OK, so here you do what the instructions tell you, double click on the virtual box dot package icon
+
+04:26.690 --> 04:31.280
+click continue, continue again and install.
+
+04:32.210 --> 04:35.840
+And then here I just enter the local admin password and click.
+
+04:39.980 --> 04:47.030
+Now go to the applications menu and click the virtual box icon to start your virtualization environment.
+
+04:49.590 --> 04:52.770
+Congratulations, you've installed a virtual box.

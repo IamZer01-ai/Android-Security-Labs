@@ -1,0 +1,313 @@
+WEBVTT
+
+00:00.150 --> 00:06.570
+So in APK studio, which is a cross platform idea for reverse engineering and recompiling of Android
+
+00:06.570 --> 00:15.330
+application binaries within a single user interface, we will install a studio on the host machine.
+
+00:16.720 --> 00:22.840
+All right, so here we'll use the APK lab extension for the same purposes, but we would like to show
+
+00:22.840 --> 00:29.320
+the installation and usage of a studio for those who want to use a studio.
+
+00:30.130 --> 00:36.140
+Of course, if you don't want to install a bookcase studio, please just go ahead and skip the lecture.
+
+00:36.340 --> 00:38.520
+You won't be penalized, I promise.
+
+00:39.890 --> 00:45.230
+So, you know, the drill over the browser, search for a studio, click on GitHub page.
+
+00:46.340 --> 00:50.000
+Now, scroll down a bit, and this is the user interface.
+
+00:51.610 --> 00:56.890
+So we can download it from the releases page, but first, let's look at some information.
+
+00:57.810 --> 01:02.400
+So that we know how to build it and all of that information is right here on the wiki page.
+
+01:03.910 --> 01:06.040
+So we first need to install Kutty.
+
+01:07.600 --> 01:08.620
+So open the page.
+
+01:10.780 --> 01:15.070
+And these are the packages and installers of Kutty five.
+
+01:16.260 --> 01:20.130
+You can download an offline installer to install easily.
+
+01:22.310 --> 01:24.880
+Download one of the installers, depending on your host system.
+
+01:26.030 --> 01:34.010
+And I've already got it, so I'll download it via homebrew on my Mac OS, so that means on the terminal
+
+01:34.010 --> 01:34.460
+screen.
+
+01:35.980 --> 01:37.570
+First run Broo update.
+
+01:38.510 --> 01:40.130
+And it's already up to date.
+
+01:41.320 --> 01:45.550
+Mine is yours might not be, but I just want to make sure that we're all on the same page.
+
+01:47.510 --> 01:50.240
+So we'll run Broo, install Kutty.
+
+01:53.020 --> 01:55.410
+And you can see it's already installed on my host machine.
+
+01:56.790 --> 01:59.280
+So let's visit the releases page.
+
+02:03.530 --> 02:06.440
+I'll install the latest disk image for Mac OS.
+
+02:07.550 --> 02:10.820
+Of course, if you're using windows, just install the zip file.
+
+02:12.310 --> 02:13.300
+Save the file.
+
+02:13.560 --> 02:16.300
+OK, and we can wait for a bit.
+
+02:17.680 --> 02:20.020
+All right, so now that is downloaded, let's open it.
+
+02:23.700 --> 02:25.140
+What is this?
+
+02:25.170 --> 02:29.250
+There seems to be a problem with the icon of a studio.
+
+02:30.420 --> 02:31.140
+It's not important.
+
+02:32.400 --> 02:34.530
+Well, drag it to the applications folder.
+
+02:36.830 --> 02:41.540
+OK, so if you're still here, let's open it from the applications folder.
+
+02:42.580 --> 02:49.390
+Don't you know what McCoist needs to trust this application, not a bad idea, so, all right, quick
+
+02:49.780 --> 02:50.740
+and open.
+
+02:52.650 --> 02:56.790
+OK, so now we need to install the missing tool so that we can use a studio.
+
+02:58.290 --> 03:08.250
+So let's look at the necessary tools and settings, so we need Apaid tool, Jadakiss, HDB and APK Sinar.
+
+03:09.510 --> 03:13.980
+So really, all we have to do is write the location of their binary files here.
+
+03:15.420 --> 03:17.790
+So to download Java, let's click on this link.
+
+03:19.380 --> 03:24.120
+You can download Java from this website and click on JDK download.
+
+03:26.470 --> 03:28.000
+You'll have to scroll down a bit.
+
+03:29.350 --> 03:32.340
+And then download one of the packages, depending on your host machine.
+
+03:33.700 --> 03:36.920
+Of course, I will select the one for macher was.
+
+03:38.490 --> 03:40.620
+Accept the agreement and download.
+
+03:46.190 --> 03:49.280
+All right, so it's downloaded so I can click on it.
+
+03:54.710 --> 03:56.270
+And double click on the package.
+
+03:58.470 --> 04:02.700
+Continue, install and enter the password or fingerprint.
+
+04:05.110 --> 04:08.920
+OK, close it up now, let's go back to the settings.
+
+04:13.000 --> 04:18.550
+So next, we need to install a RPK tool for the host machine to be able to run a big studio.
+
+04:19.670 --> 04:23.060
+We'll need to download it on the county machine later.
+
+04:24.330 --> 04:25.710
+So click on this link.
+
+04:26.910 --> 04:28.260
+Download the jar file.
+
+04:34.600 --> 04:43.360
+All right, so let's go to the downloads folder and we'll give the location of this file to Apex Studio.
+
+04:44.880 --> 04:51.210
+Of course, you can put binary files wherever you want, but I'll create a folder and collect it so
+
+04:51.210 --> 04:52.860
+that I can just keep it all together.
+
+04:53.190 --> 04:55.440
+I do like being organized.
+
+04:56.930 --> 05:04.430
+So I created a folder called Binaries under the documents folder, and I'll move the RPK tool here.
+
+05:05.060 --> 05:12.740
+OK, so let's add the location of the tool jar file to a bookcase, studio settings.
+
+05:13.010 --> 05:15.590
+So just click on browse and select the file.
+
+05:17.990 --> 05:24.410
+OK, so the next necessary tool is Genex, so click on this link to download.
+
+05:25.570 --> 05:28.300
+Download genetics from the first link.
+
+05:29.650 --> 05:33.220
+OK, so let's open it up by unzipping.
+
+05:36.150 --> 05:40.250
+So the executable file of Jadakiss is under the bin folder.
+
+05:41.790 --> 05:44.420
+Also, move the jet folder to the binaries folder.
+
+05:46.510 --> 05:51.280
+OK, so let's add the location of genetics to a studio settings.
+
+05:52.450 --> 05:54.280
+Click on Browse Select File.
+
+05:58.700 --> 06:01.910
+All right, so the next one is EDB.
+
+06:03.220 --> 06:07.240
+Now, we don't need to download EDB because it comes with Android studio.
+
+06:08.680 --> 06:18.400
+But we do need to know where EDB is, sort of learn this, just open up Android studio and click configure.
+
+06:19.480 --> 06:21.340
+And Open SDK manager.
+
+06:23.110 --> 06:27.520
+And here we've got the STK location, so Copiah.
+
+06:29.250 --> 06:35.110
+Now, go to this location from the file manager, or you can always use a terminal if you want.
+
+06:35.790 --> 06:37.440
+I'm going to continue with the terminal.
+
+06:39.030 --> 06:43.200
+So we'll change the directory to this location list files.
+
+06:45.680 --> 06:48.290
+So now let's look at the platform tools folder.
+
+06:50.430 --> 06:51.630
+And it's here.
+
+06:52.900 --> 06:56.170
+So run TWD to copy their current location.
+
+06:58.120 --> 07:01.960
+Paste it here and don't forget to add the EDB.
+
+07:04.510 --> 07:06.380
+All right, we're almost there.
+
+07:07.270 --> 07:08.350
+So finally.
+
+07:09.470 --> 07:13.200
+We've got to have the Uber app case to.
+
+07:13.230 --> 07:15.890
+All right, so let's click on this link.
+
+07:17.780 --> 07:19.130
+Download the jar file.
+
+07:22.000 --> 07:23.410
+Go to the downloads folder.
+
+07:26.270 --> 07:30.400
+And I am going to move this file to the binaries folder as well.
+
+07:32.650 --> 07:34.060
+So now go back.
+
+07:35.120 --> 07:38.180
+Click on Browse and select the file.
+
+07:40.880 --> 07:45.440
+All right, so that is a process and we've now completed.
+
+07:47.070 --> 07:51.570
+Installing the necessary tools, let me just see.
+
+07:51.590 --> 07:58.830
+Yeah, so let's do this will restart a studio and we're going to check through all the tools.
+
+08:00.240 --> 08:03.900
+All right, so here you can see all of the versions of each tool.
+
+08:05.130 --> 08:08.610
+And that means there is no problem, we have done it.
+
+08:09.480 --> 08:10.840
+So that's some good work.
+
+08:11.610 --> 08:15.870
+Let's add an epic fail here and check if epic studio works.
+
+08:17.140 --> 08:23.050
+So we're going to use the insecure bank application for testing, so we might as well download it.
+
+08:24.480 --> 08:27.030
+Search for in your bank, the two.
+
+08:28.760 --> 08:30.710
+And just click on the GitHub page.
+
+08:31.670 --> 08:34.880
+Go to the releases page and download the APK file.
+
+08:37.650 --> 08:48.360
+Now, let's the this file in a studio, so if you look under the file tab, click on Open and APK.
+
+08:49.980 --> 08:59.780
+Selecta apk file and open it, select the decompiled Java option and click on the decompiled button.
+
+09:01.310 --> 09:06.460
+All right, so it's compiling might take a moment or two.
+
+09:08.400 --> 09:09.350
+Wait for it.
+
+09:10.940 --> 09:15.110
+All right, so here is the decompiled source code of APIC.
+
+09:16.520 --> 09:20.910
+Of course, we're going to analyze it in great detail while we're testing.

@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00.680 --> 00:05.210
+So now we're on the last step to fix the problems and run Carly.
+
+00:06.200 --> 00:12.620
+Now, in this lecture, I will assume that you do have trouble with network connections and I'm going
+
+00:12.620 --> 00:15.980
+to give you some solutions so that you can fix the problem.
+
+00:18.080 --> 00:24.470
+Now, hopefully you're not facing such a problem, so if you don't have a network situation, please,
+
+00:24.470 --> 00:27.980
+you don't have to apply any of these solutions in this lesson.
+
+00:27.980 --> 00:33.320
+But it's good to have you on the ride and you can always sharpen your troubleshooting skills.
+
+00:34.680 --> 00:40.440
+So first off, let's reboot the machine to understand whether the problem is an exception for the initial
+
+00:40.440 --> 00:41.060
+run or not.
+
+00:41.990 --> 00:48.050
+So I shut down the virtual machine because I want to look at the settings of now select Caleigh and
+
+00:48.350 --> 00:55.310
+click the settings button and click this system tab, I want to make the RAM three gigabytes.
+
+00:58.040 --> 01:01.190
+So now I can click the start button to boot it again.
+
+01:07.950 --> 01:10.380
+Username and password are both Kelly.
+
+01:14.860 --> 01:21.460
+OK, we are in again, so let's check the network connection by clicking the network icon at the upper
+
+01:21.460 --> 01:22.390
+right hand corner.
+
+01:23.020 --> 01:26.190
+So I think there's a problem on the DHC of the VMM.
+
+01:26.470 --> 01:29.570
+Well, anyway, we can live without DHP as well.
+
+01:31.000 --> 01:33.090
+So I'm looking at the Wired network.
+
+01:33.640 --> 01:34.450
+Don't be confused.
+
+01:34.450 --> 01:40.150
+Even though you share the wireless connection of your host machine, it's simulated as a wired network
+
+01:40.150 --> 01:40.810
+in the VM.
+
+01:41.950 --> 01:45.310
+So let's open a terminal screen and look at the networking service.
+
+01:45.310 --> 01:52.240
+If it's running right service networking and press tab twice to see the available commands of the service.
+
+01:53.230 --> 01:59.710
+Networking service does not have status command, so I'll assume that it's not started and try to start
+
+01:59.710 --> 01:59.800
+it.
+
+02:02.990 --> 02:09.020
+And if you are still not connected at this point, let's go to network settings, you can go to network
+
+02:09.020 --> 02:12.710
+settings via advanced network settings under the menu.
+
+02:17.460 --> 02:23.580
+Or you can right click on the network icon in the upper right corner and select edit connections.
+
+02:25.540 --> 02:28.870
+Now click the wheel icon under the wire tab.
+
+02:28.900 --> 02:36.610
+OK, OK, I go to the IPV for tab to set the IP manually, click the manual option.
+
+02:37.180 --> 02:38.800
+I'll choose an IP for the new COLLY.
+
+02:39.950 --> 02:48.560
+Now, the IP block of my virtual network is 10 zero two zero through 24, so I'll choose an IP from
+
+02:48.560 --> 02:49.160
+this block.
+
+02:49.970 --> 02:56.930
+Net mask is 255 255 255 zero for 24 IP block.
+
+02:59.000 --> 03:02.180
+The gateway is 10 zero, not two to.
+
+03:03.720 --> 03:08.880
+So I can use a Google DNS is my DNS server, and right now you can click the Saban.
+
+03:10.620 --> 03:14.250
+OK, I'll reboot the machine to be sure that the changes are applied.
+
+03:26.650 --> 03:27.250
+Completed.
+
+03:28.630 --> 03:35.050
+So open the terminal screen and first type pseudo as you just switch the user to route so that you don't
+
+03:35.050 --> 03:41.560
+have to write pseudo for every command that requires privileges and then run the F config command to
+
+03:41.560 --> 03:44.170
+see the IP address of Caleigh.
+
+03:45.090 --> 03:46.170
+And it's 200.
+
+03:47.650 --> 03:53.950
+So let's ping a remote system, for example, Google DNS eight eight eight eight eight.
+
+03:55.550 --> 04:01.220
+Yes, we received the response packages, and that works OK now, so to double check, open a browser
+
+04:01.250 --> 04:02.810
+and visit any Web site.

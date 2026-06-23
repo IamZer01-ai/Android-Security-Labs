@@ -1,0 +1,43 @@
+WEBVTT
+
+00:00.540 --> 00:03.450
+HDB or Android debugged bridge.
+
+00:03.810 --> 00:08.310
+It's a command line utility included with Google's Android SDK.
+
+00:09.150 --> 00:17.490
+ADB can control your device over USB from a computer copy, files back and forth, install and uninstall
+
+00:17.490 --> 00:20.100
+apps, run shell commands and many more things.
+
+00:21.040 --> 00:24.370
+So let's go ahead and install Adibi Intercounty.
+
+00:25.720 --> 00:28.840
+So you go to Kelly, open the Web browser.
+
+00:31.220 --> 00:33.680
+Search for install EDB Caleigh.
+
+00:34.760 --> 00:37.790
+Click on the first Web site, scroll down a bit.
+
+00:40.020 --> 00:42.060
+And we'll first update the packages.
+
+00:43.570 --> 00:49.720
+So open the terminal screen and switch user to route run Apte update.
+
+00:53.390 --> 01:01.010
+Now, install ADB with the ATP, get install Android tools, ADB command.
+
+01:05.240 --> 01:06.980
+And you might have to wait a bit.
+
+01:10.920 --> 01:16.170
+All right, so insulation is completed successfully so we can run HDB.
+
+01:18.400 --> 01:21.850
+And have a look at this, these are the options for EDB.

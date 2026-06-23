@@ -1,0 +1,238 @@
+WEBVTT
+
+00:01.210 --> 00:07.810
+All right, so before we continue getting deeper and deeper into Android security testing, because
+
+00:07.810 --> 00:13.010
+that is what we are intending to do, we need to set up the laboratory.
+
+00:13.210 --> 00:13.630
+All right.
+
+00:13.630 --> 00:19.240
+So let's let's be ready for the course and for the hands on examples and the practice that we're going
+
+00:19.240 --> 00:19.900
+to get into.
+
+00:20.870 --> 00:25.100
+So let's have a look at all of the software that we will install with its categories.
+
+00:26.310 --> 00:32.340
+So throughout the course, we're going to install some of the software onto the host machine, so when
+
+00:32.340 --> 00:39.000
+I host operating system is Mac OS, of course you can always use Microsoft Windows or any Linux distribution
+
+00:39.000 --> 00:40.620
+like Ubuntu, Fedora, etc..
+
+00:41.480 --> 00:48.860
+And there really no disadvantages in terms of the, you know, following and learning the exercises
+
+00:48.860 --> 00:49.730
+in this course.
+
+00:50.790 --> 00:57.510
+There's really no significant difference when these software will run on the different operating systems,
+
+00:57.510 --> 00:57.740
+right?
+
+00:57.750 --> 00:59.250
+So there's there's not a problem.
+
+00:59.430 --> 01:01.020
+Each has their own emulator.
+
+01:02.900 --> 01:10.310
+But besides a host operating system, we do need to install Calli on a virtualization platform.
+
+01:10.640 --> 01:15.590
+So Callie, briefly is a Linux distribution that is prepared for ethical hackers.
+
+01:15.620 --> 01:18.290
+So we're going to use Callie as the attacker system.
+
+01:18.890 --> 01:22.010
+Callie includes a lot of useful and free to use hacking tools.
+
+01:22.010 --> 01:23.990
+And we're going to use some of these tools.
+
+01:25.210 --> 01:32.020
+Besides all that, we're going to install some tools on the Caleigh that will be, well, extra, if
+
+01:32.020 --> 01:36.340
+you will, but needed for mobile security testing.
+
+01:37.980 --> 01:43.350
+Of course, you can use any virtualization platform that you prefer, such as virtual box, VMware,
+
+01:43.350 --> 01:50.190
+player parallels, etc., There's, again, no significant difference between the platforms in terms
+
+01:50.190 --> 01:53.070
+of the exercises of this course.
+
+01:54.130 --> 02:00.640
+Virtual bikes, I will add, is a free open source platform, and it has a large number of features.
+
+02:01.930 --> 02:09.430
+VM, where's free version is great, it's VMware workstation player, formerly VMware player, and it
+
+02:09.430 --> 02:11.230
+also has some powerful utilities.
+
+02:12.840 --> 02:18.810
+Some of the main differences between the two platforms are virtual disk formats, network modes and
+
+02:19.020 --> 02:20.220
+user interfaces.
+
+02:21.460 --> 02:27.520
+You can always compare the features of Virtual Box and VMware in particular detail and select whatever
+
+02:27.520 --> 02:30.000
+suits you, what you feel like working in.
+
+02:30.850 --> 02:33.670
+What I'm going to do is use virtual box.
+
+02:35.070 --> 02:41.940
+Now, like I said before, emulators are very important to simulate and test Android mobile phones without
+
+02:41.940 --> 02:44.750
+needing to have the physical device right in front of you.
+
+02:46.170 --> 02:52.710
+Emulators will provide almost all of the capabilities of real Android device, so on this course, we're
+
+02:52.710 --> 02:58.440
+going to install Android studio and something called Jenny Motion to use as the emulator.
+
+02:59.310 --> 03:05.060
+Now, there are some competing pronunciations out there, again, emotion, whatever I just say, gently
+
+03:05.070 --> 03:07.320
+motion and you can say it the way that you want.
+
+03:08.530 --> 03:15.640
+Now, Android studio emulators support X 86, R.M. and Arem 64 processors.
+
+03:17.160 --> 03:24.690
+Jenny Motion, however, only supports 86 processors, but it's easy to use and just be aware that some
+
+03:24.690 --> 03:28.760
+HBK may require us to use Jenny motion due to its structure.
+
+03:29.070 --> 03:30.810
+So we're just going to be using both of them.
+
+03:32.020 --> 03:38.130
+Jenny Motion has an addition for free personal use, but after 30 days, its features will be limited.
+
+03:38.140 --> 03:43.990
+But don't worry because available features will be enough for our tests, even if it takes you longer
+
+03:43.990 --> 03:44.740
+than 30 days.
+
+03:46.150 --> 03:52.600
+One of the mobile security frameworks that we will use in the course is Mob SRF.
+
+03:53.710 --> 03:59.680
+So it's a mobile pen testing framework capable of performing static and dynamic analysis.
+
+04:01.040 --> 04:07.130
+We're going to need some tools to perform the reverse engineering and static analysis of Android applications,
+
+04:07.970 --> 04:13.480
+and these tools are so Adibi Android Debug Bridge.
+
+04:14.330 --> 04:20.780
+This is a versatile command line tool used to communicate with an emulator instance or connected Android
+
+04:20.780 --> 04:21.260
+device.
+
+04:21.770 --> 04:27.800
+Now, by default, Janni Motion Desktop uses its own Android tools which contain EDB.
+
+04:28.640 --> 04:34.220
+But if you want to, you can always install and use Gennie motion as an emulator, then you don't need
+
+04:34.220 --> 04:36.440
+to install any ETB separately.
+
+04:38.270 --> 04:47.460
+A tool is also for reverse engineering, third party closed binary Android apps so it can decode resources
+
+04:47.460 --> 04:53.730
+to the nearly original form and rebuild them after making some modifications.
+
+04:55.210 --> 05:04.360
+Bytecode viewer is an Android app reverse engineering suite that includes a D compiler, ed and debugger.
+
+05:05.340 --> 05:07.050
+Visual Studio Code.
+
+05:07.950 --> 05:14.820
+Is a code editor, redefined and optimized for building and debugging modern applications, we'll use
+
+05:14.820 --> 05:17.910
+voice code for the APK lab extension.
+
+05:18.840 --> 05:23.190
+So APIC lab is Android reverse engineering workbench.
+
+05:24.600 --> 05:33.420
+A studio which is an open source cross platform, Kutty based idea for reverse engineering Android application
+
+05:33.420 --> 05:34.080
+packages.
+
+05:35.720 --> 05:42.260
+So now I want to show you the lab architecture diagram for this cause it'll help you understand the
+
+05:42.260 --> 05:47.990
+structure of the virtual machines as well as the software that we're going to install in the laboratory
+
+05:47.990 --> 05:48.560
+environment.
+
+05:50.140 --> 05:53.520
+So we'll have a look at the big picture, here's the whole picture.
+
+05:55.490 --> 06:02.360
+So host, is your computer on the network that you access via the Internet, via Wi-Fi access point
+
+06:02.360 --> 06:03.800
+or a wired connection?
+
+06:03.800 --> 06:04.510
+It doesn't matter.
+
+06:06.440 --> 06:12.560
+And you will install one of the virtualization platforms such as VMware or Virtual Box on your host
+
+06:12.560 --> 06:13.120
+machine.
+
+06:14.600 --> 06:24.110
+Will install Jenny Motion, Android Studio, APK Studio, and the code on the host machine will install
+
+06:24.110 --> 06:24.530
+Calli.
+
+06:24.530 --> 06:30.410
+Linux is the attacker system and install the necessary tools for Android security testing.
+
+06:31.590 --> 06:38.340
+Although there are some virtual machines that come preinstalled as tools for Android testing, you may
+
+06:38.340 --> 06:41.910
+not be able to access all of them for free in the future.
+
+06:42.600 --> 06:46.880
+That's why we want to use Calli so that you can use it in the long run.

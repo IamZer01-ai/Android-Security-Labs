@@ -1,0 +1,115 @@
+WEBVTT
+
+00:01.000 --> 00:08.170
+So Kelly Lennox is a Debian based Linux distribution aimed at advanced penetration testing and security
+
+00:08.170 --> 00:14.500
+auditing, Colly contains several hundred tools which are geared towards various information security
+
+00:14.500 --> 00:20.620
+tasks such as penetration testing, security research, computer forensics and reverse engineering.
+
+00:21.720 --> 00:28.200
+Carly Lennox is developed, funded and maintained by offensive security, a leading information security
+
+00:28.200 --> 00:29.010
+training company.
+
+00:30.050 --> 00:37.100
+Now we're going to use Carly as the attacker system, however, if you don't want to use Carly for whatever
+
+00:37.100 --> 00:41.830
+reason, you can download the tools that we use and install them to your host machine.
+
+00:42.830 --> 00:47.310
+So let's download it and install it is a virtual machine on our host system.
+
+00:48.140 --> 00:52.490
+I'm going to prepare Carly PVM directly from the VMware image first.
+
+00:53.270 --> 00:55.550
+The first step is to download the VM files.
+
+00:57.210 --> 01:01.230
+Over the browser and simply Google words, collee and download.
+
+01:04.190 --> 01:07.220
+The first website is the official site of college, so click on it.
+
+01:08.550 --> 01:10.270
+This is the download page of COLLEE.
+
+01:10.920 --> 01:14.850
+These are the ISO files you can use them to install.
+
+01:14.850 --> 01:20.250
+Colly is the main host or as a virtual machine in any virtualization platform.
+
+01:21.210 --> 01:24.870
+Now, these are the images that you can use to install.
+
+01:26.830 --> 01:33.640
+With the latest release, Kelly, Linux announced that the images have been restructured and simplified,
+
+01:34.360 --> 01:41.890
+so from now on, Callisthenics has new image styles, installer image, a live image and a network installer
+
+01:41.890 --> 01:42.430
+image.
+
+01:44.230 --> 01:51.070
+Installer image is recommended for users who want to use Calli Linux on their system, no network connection
+
+01:51.070 --> 01:52.270
+is required.
+
+01:53.330 --> 02:01.160
+You can choose desktop environment such as CEO, KDE, Knowm and any other tools that you want to install
+
+02:01.160 --> 02:02.390
+during your installation.
+
+02:03.970 --> 02:05.680
+Now, the second one is a live image.
+
+02:06.620 --> 02:09.110
+So it's used to run Calli without installing it.
+
+02:10.350 --> 02:16.170
+And the last one is a network install image, the smallest image, of course, download containing only
+
+02:16.170 --> 02:22.820
+enough to install the base system that requires a network connection to install selected applications.
+
+02:25.020 --> 02:28.720
+At the bottom of the Colly image files table, there are ready to use.
+
+02:28.980 --> 02:32.090
+Well, almost ready to use Colly virtual machines.
+
+02:32.520 --> 02:38.640
+So if you're going to use as virtual machine, you can use them instead of installing ISO files from
+
+02:38.640 --> 02:39.090
+scratch.
+
+02:40.060 --> 02:47.350
+I was going to use one of these images now, so I'll click on this link, the VMware images are on this
+
+02:47.350 --> 02:47.740
+tab.
+
+02:48.280 --> 02:50.130
+The first link is a zip archive.
+
+02:50.500 --> 02:52.420
+You have to extract it after the download.
+
+03:11.140 --> 03:14.680
+Let me show you what you will have after you extract it.
+
+03:22.030 --> 03:23.950
+And you will have a VMware file.
+
+03:25.160 --> 03:28.290
+You can simply run the VMAX file to run the VM.

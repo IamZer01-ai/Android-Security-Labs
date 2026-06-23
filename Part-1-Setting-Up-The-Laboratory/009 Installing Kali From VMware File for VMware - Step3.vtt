@@ -1,0 +1,154 @@
+WEBVTT
+
+00:00.630 --> 00:05.190
+So now we're on the last step, fix the problems and run Carly.
+
+00:06.180 --> 00:12.600
+Now, in this lecture, I will assume that you do have trouble with network connections and I'm going
+
+00:12.600 --> 00:15.930
+to give you some solutions so that you can fix the problem.
+
+00:18.080 --> 00:24.470
+Now, hopefully you're not facing such a problem, so if you don't have a network situation, please,
+
+00:24.470 --> 00:27.950
+you don't have to apply any of these solutions in this lesson.
+
+00:27.950 --> 00:33.290
+But it's good to have you on the ride and you can always sharpen your troubleshooting skills.
+
+00:34.660 --> 00:40.420
+So first off, let's reboot the machine to understand whether the problem is an exception for the initial
+
+00:40.420 --> 00:41.040
+run or not.
+
+00:41.970 --> 00:45.330
+So I shut down the virtual machine because I want to look at the settings of.
+
+00:48.440 --> 00:49.910
+And cook the settings button.
+
+00:50.910 --> 00:56.190
+Click processors and memory, I want to make the RAM three gigabytes.
+
+01:00.860 --> 01:04.010
+So now I can click the start button to boot it again.
+
+01:05.700 --> 01:12.090
+Now, let me look at the network adapter while it's booting click on network adapter, Internet is shared
+
+01:12.090 --> 01:14.520
+in that mode and that's what I want.
+
+01:20.970 --> 01:23.400
+Username and password are both Carly.
+
+01:27.880 --> 01:34.480
+OK, we are in again, so let's check the network connection by clicking the network icon at the upper
+
+01:34.480 --> 01:35.420
+right hand corner.
+
+01:36.040 --> 01:39.420
+So I think there's a problem on the DHP of the VMware.
+
+01:39.490 --> 01:42.610
+Well, anyway, we can live without DHP as well.
+
+01:44.020 --> 01:46.110
+So I'm looking at the Wired network.
+
+01:46.660 --> 01:47.470
+Don't be confused.
+
+01:47.470 --> 01:53.170
+Even though you share the wireless connection of your host machine, it's simulated as a wired network
+
+01:53.170 --> 01:53.830
+in the VM.
+
+01:54.970 --> 01:58.330
+So let's open a terminal screen and look at the networking service.
+
+01:58.330 --> 02:05.260
+If it's running right service networking and press tab twice to see the available commands of the service.
+
+02:06.250 --> 02:12.730
+Networking service does not have status command, so I'll assume that it's not started and try to start
+
+02:12.730 --> 02:12.820
+it.
+
+02:16.010 --> 02:22.040
+And if you are still not connected at this point, let's go to network settings, you can go to network
+
+02:22.040 --> 02:25.730
+settings via advanced network settings under the menu.
+
+02:29.640 --> 02:35.760
+Or you can right click on the network icon in the upper right corner and select edit connections.
+
+02:37.670 --> 02:41.030
+Now click the wheel icon under the wire tab.
+
+02:41.060 --> 02:48.770
+OK, OK, I go to the IPV for tab to set the IP manually, click the manual option.
+
+02:49.340 --> 02:50.940
+I'll choose an IP for the new COLLEE.
+
+02:51.380 --> 02:59.120
+Now the IP block of my virtual network is one seven two one six one one three one eight zero through
+
+02:59.120 --> 02:59.950
+24.
+
+03:00.530 --> 03:02.330
+So I'll choose an IP from this block.
+
+03:03.140 --> 03:10.070
+Net mask is 255 255 255 zero for 24 IP block.
+
+03:10.310 --> 03:16.130
+As far as I remember, the gateway is one seven two one six one three one two.
+
+03:19.430 --> 03:24.950
+So I use eight, not eight eight eight eight, that's the Google VNS as my DNS server.
+
+03:25.460 --> 03:25.850
+OK.
+
+03:27.610 --> 03:33.430
+They look at another VMS network settings, so this is Carly I'm currently using go to network settings,
+
+03:33.430 --> 03:34.810
+select wired settings.
+
+03:36.830 --> 03:41.030
+Click the wheel icon under the Wired tab, go to the IPV for tab.
+
+03:41.390 --> 03:43.070
+Yes, the gateway is correct.
+
+03:47.370 --> 03:51.000
+OK, I'll reboot the machine to be sure that the changes are applied.
+
+03:55.880 --> 03:56.490
+Completed.
+
+04:01.420 --> 04:07.900
+So open a terminal screen type if config to see the IP address of the new COLLY, it's two to five,
+
+04:08.140 --> 04:09.040
+just as we said.
+
+04:09.850 --> 04:16.150
+So let's ping a remote system, for example, Google DNS eight eight eight eight eight.
+
+04:17.770 --> 04:23.410
+Yes, we received the response packages, and that works OK now, so to double check, open a browser
+
+04:23.440 --> 04:25.000
+and visit any Web site.

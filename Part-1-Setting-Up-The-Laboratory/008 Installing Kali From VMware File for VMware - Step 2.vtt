@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.300 --> 00:02.130
+So the second step is to install.
+
+00:03.000 --> 00:08.130
+Well, since we'll use the oveI file, it would be better to say import for this step.
+
+00:09.960 --> 00:11.260
+And the downloads finished.
+
+00:11.310 --> 00:13.140
+So let's look at the final location.
+
+00:15.270 --> 00:20.490
+It's under the download folder now, I'll open the VMware fusion interface.
+
+00:22.050 --> 00:25.830
+From the add button at the upper left corner to import.
+
+00:27.320 --> 00:32.900
+Click, they choose from Button and choose the oveI file, you just download and click, OK?
+
+00:33.870 --> 00:42.600
+And as you see, VMware Fusion reads the file and then detects the VM as Kelly Linux 20 dot to.
+
+00:44.420 --> 00:46.220
+We can could continue for the next step.
+
+00:50.420 --> 00:57.080
+Now it's asking for the location of the PVM and this older works for me now, I think it's better to
+
+00:57.080 --> 01:00.700
+collect all the VMS in a folder so you can manage them easier.
+
+01:01.460 --> 01:04.280
+It will create a single file with this name.
+
+01:04.400 --> 01:05.240
+Now Quixey.
+
+01:06.020 --> 01:07.280
+And it starts to import.
+
+01:07.880 --> 01:09.170
+I may take a couple of minutes.
+
+01:11.720 --> 01:15.770
+So I want to look at the size of the empty space on my host.
+
+01:19.150 --> 01:27.580
+D.F. Command simply displays the free disk space and Dash eight parameter makes the result human readable.
+
+01:29.120 --> 01:34.910
+I have 192 gigabytes of free space, and that'll be quite enough for this installation.
+
+01:44.600 --> 01:51.650
+Installations finished and this is a summary of the VM ram is two gigabytes by default.
+
+01:52.670 --> 01:56.580
+And if you have enough ram on your whole system, I suggest you increase it.
+
+01:57.800 --> 02:00.260
+Networking is not just as I want.
+
+02:00.920 --> 02:03.620
+OK, click finish to finish the installation of Carly.
+
+02:04.700 --> 02:07.550
+Now it's asking if you want to upgrade the VM.
+
+02:07.820 --> 02:09.020
+I say, OK, why not?
+
+02:11.980 --> 02:14.530
+So our new colleague is booting for the first time.
+
+02:20.640 --> 02:22.810
+And we're here at the login screen.
+
+02:23.310 --> 02:25.290
+Let me make the pvm full screen.
+
+02:25.520 --> 02:26.070
+OK.
+
+02:27.310 --> 02:32.740
+Now, in addition to the changes that I mentioned in the previous lecture, there is another important
+
+02:32.740 --> 02:41.710
+change in this county 2020 to release the default user account is now a standard unprivileged user.
+
+02:42.580 --> 02:46.890
+Caleigh is no longer using the super user account route by default.
+
+02:47.680 --> 02:47.970
+Right.
+
+02:48.340 --> 02:53.050
+So the new default credentials are Kelly and Co..
+
+02:55.740 --> 02:58.890
+And welcome to Khaleed 2020, talked to.
+
+03:00.280 --> 03:03.820
+So let's open a terminal screen and check the network connection.
+
+03:06.380 --> 03:12.950
+When I run the if config command with standard user privileges, I will get an error because they have
+
+03:12.950 --> 03:17.660
+config command is under the Espin folder and requires route privileges.
+
+03:18.750 --> 03:21.500
+So why don't we have a look inside that has been folder.
+
+03:23.370 --> 03:31.800
+As you can see, I can run this CD, TWD and Alaska Manzer without pseudo, these commands do not require
+
+03:32.100 --> 03:32.690
+privileges.
+
+03:33.420 --> 03:37.350
+However, the commands that are under the SBN folder must be run with pseudo.
+
+03:40.690 --> 03:41.770
+If config is here.
+
+03:42.880 --> 03:44.800
+And let's run this command with pseudo.
+
+03:50.430 --> 03:51.510
+And it's OK now.
+
+03:53.400 --> 03:56.370
+Of course, there is a more practical solution.
+
+03:57.310 --> 04:02.980
+You can always switch the user to root so we don't have to write pseudo for every command that requires
+
+04:02.980 --> 04:03.820
+room privileges.
+
+04:04.890 --> 04:07.260
+So let's run pseudo Espoo.
+
+04:08.620 --> 04:14.590
+OK, so I'm I'm right now, and I'll double check that with the Who am I command?
+
+04:16.470 --> 04:22.110
+Well, now I can run any command which requires super user privileges without pseudo.
+
+04:24.140 --> 04:32.420
+And this is my IP address, if if Config didn't obtain an IP address, that means that you have a problem
+
+04:32.420 --> 04:34.010
+with your network configuration.
+
+04:35.050 --> 04:36.370
+It's not a problem.
+
+04:36.730 --> 04:43.570
+Problems do occur, and I certainly will give you some solutions to fix any possible network problems
+
+04:43.810 --> 04:44.800
+in the next lecture.

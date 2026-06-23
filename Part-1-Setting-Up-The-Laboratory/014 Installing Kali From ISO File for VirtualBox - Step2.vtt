@@ -1,0 +1,190 @@
+WEBVTT
+
+00:00.240 --> 00:04.620
+So what do you think the second step of installing Colly from the ISO file is?
+
+00:04.980 --> 00:06.380
+That's right, installation.
+
+00:07.560 --> 00:12.660
+The ISO file for Colly has been downloaded and it's in the download folder.
+
+00:14.890 --> 00:21.220
+So now I'm going to open a virtual box, click the new button and give your machine a name.
+
+00:26.780 --> 00:34.050
+You can choose the folder for PVM now, it's better to collect VMS in the same location, in my opinion.
+
+00:34.310 --> 00:38.860
+That way I stay organized and I certainly recommend you do that as well.
+
+00:39.730 --> 00:41.440
+And I'm OK with a default.
+
+00:42.660 --> 00:43.950
+Type is Lennix.
+
+00:43.980 --> 00:44.730
+OK.
+
+00:46.740 --> 00:53.820
+Now, we know that Kelly is a Debian based Linux distro and we downloaded the 64 bit version, so choose
+
+00:53.820 --> 00:58.410
+Linux then a 64 bit version of the latest Debbie.
+
+01:00.240 --> 01:01.950
+Now I can continue to move on.
+
+01:04.040 --> 01:06.570
+Ram is a one gigabyte by default.
+
+01:06.770 --> 01:09.980
+Now, I do want to make RAM three gigabytes here.
+
+01:11.430 --> 01:15.450
+And will want to create a virtual hard disk now, so it could create.
+
+01:17.230 --> 01:23.530
+Here you can change the hard disk file type, the VDI file format is used when you create a new virtual
+
+01:23.530 --> 01:25.300
+machine with a new DES.
+
+01:26.960 --> 01:33.770
+Virtual boxer also supports VMD Kay file formats, and that's used by many other virtualization products
+
+01:33.770 --> 01:39.410
+such as VMware and VDS file formats that are used by Microsoft.
+
+01:42.180 --> 01:48.780
+We can also select the native file format of virtual box VDI, and that's one that I'll be using for
+
+01:48.780 --> 01:49.890
+this installation.
+
+01:52.350 --> 01:55.080
+So this page is for the type of hard disk.
+
+01:56.350 --> 02:05.080
+Now, dynamically allocated disks are faster to create and they'll also grow to larger sizes, fixed
+
+02:05.080 --> 02:12.180
+size disks, maybe faster to use, but that way they won't grow any larger once they start filling up.
+
+02:13.060 --> 02:18.700
+So let's select the dynamically allocated option and click continue.
+
+02:20.840 --> 02:25.160
+So here I want to make the size of a virtual disk, 20 gigabyte.
+
+02:27.330 --> 02:30.360
+OK, but continue and the start button.
+
+02:35.440 --> 02:44.110
+So here we should add the ISO file, so just click the add button and select the ISO file that is well,
+
+02:44.230 --> 02:45.810
+should be in the download folder.
+
+02:50.670 --> 02:52.290
+Fruit juice and start.
+
+02:53.800 --> 02:55.960
+PM Boutte's for the very first time.
+
+02:59.290 --> 03:06.070
+In the Bootmen, you choose one of the install or graphical install options, I'll I'll show you with
+
+03:06.070 --> 03:08.620
+a graphical install, looks like no.
+
+03:13.580 --> 03:20.330
+As you see, it's a typical operating system installation, we need to configure the OS now, so select
+
+03:20.330 --> 03:23.750
+the language, location and keyboard configuration.
+
+03:31.280 --> 03:35.150
+And now network configuration has been completed successfully.
+
+03:36.440 --> 03:43.700
+So I said the hostname to Caleigh and let's give it a domain name, I'll just choose the same name and
+
+03:43.700 --> 03:44.300
+continue.
+
+03:48.170 --> 03:50.780
+I said the username and password for the new user.
+
+03:51.820 --> 03:56.890
+Because Carly will not use a route account by default when it started.
+
+04:01.150 --> 04:07.930
+Don't need any partitions, we're only installing light is a virtual machine, so we can use the entire
+
+04:07.930 --> 04:10.040
+disk reserve for itself continue.
+
+04:11.350 --> 04:14.350
+Keep going with the default options for disk partitioning.
+
+04:20.920 --> 04:26.740
+Yes, right, that changes to discuss now the system is being installed.
+
+04:29.530 --> 04:31.870
+And just like before, it may take several minutes.
+
+04:32.940 --> 04:39.960
+So here, Callie asks for the HTP proxy information, but we're not going to need it now so we can just
+
+04:39.960 --> 04:41.910
+leave it blank and continue.
+
+04:49.680 --> 04:54.930
+And in this section, you can choose the desktop environment that you want to use, Callie is no longer
+
+04:54.930 --> 04:58.080
+offering separate images for every desktop environment.
+
+04:58.780 --> 05:01.290
+There's just a single image for all of them.
+
+05:02.380 --> 05:08.770
+And it can be chosen during installation, so I will continue with a default option except seek.
+
+05:21.480 --> 05:24.870
+It's asking to install the Grupp bootloader to the master boot record.
+
+05:27.090 --> 05:31.740
+Now, this is more meaningful when you install an operating system as a second one on the host.
+
+05:32.250 --> 05:37.860
+We're just installing a virtual machine, so it's the only operating system for it.
+
+05:37.870 --> 05:41.730
+So, yes, install the grubbed bootloader to the master boot record.
+
+05:44.340 --> 05:49.170
+We have only one partition to install grub, so I select that and continue.
+
+05:57.180 --> 06:03.330
+And installation is complete, so it's time to boot into our new system continue.
+
+06:07.610 --> 06:09.450
+We are finally the login screen.
+
+06:13.480 --> 06:16.450
+Log in with username and password that you've set.
+
+06:17.790 --> 06:21.660
+Welcome to 64 Bit Co. installed by the ISO Far.
+
+06:27.440 --> 06:29.770
+So I want to turn it off for now.
+
+06:34.570 --> 06:37.600
+Now, let's go to the folder that we chose for insulation.
+
+06:46.290 --> 06:48.630
+And here is the county video file.

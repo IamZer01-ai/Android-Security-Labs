@@ -1,0 +1,193 @@
+WEBVTT
+
+00:00.820 --> 00:08.560
+Visual Studio Code is a streamlined code editor with support for development operations like debugging,
+
+00:09.100 --> 00:11.410
+task running and version control.
+
+00:12.580 --> 00:14.920
+We'll use it for the APK lab extension.
+
+00:16.340 --> 00:20.330
+U.K. lab is Android Reverse Engineering Workbench.
+
+00:21.750 --> 00:29.010
+Now, I'll install it and use it on my host machine, but I also want to show you how to install it
+
+00:29.400 --> 00:31.980
+on Calli for those who want to use it on Kauai.
+
+00:32.250 --> 00:32.670
+All right.
+
+00:33.240 --> 00:34.370
+So let's get started.
+
+00:35.620 --> 00:39.520
+Open up a Web browser and search for the Eskow download.
+
+00:40.420 --> 00:43.380
+And click on the official website of TVs code.
+
+00:45.620 --> 00:51.320
+So as you can see, you can install it on all platforms and insulation is very easy.
+
+00:52.750 --> 00:55.540
+But first up, I'm going to download it for Mac OS.
+
+00:56.800 --> 00:58.330
+Say the file, OK?
+
+00:59.780 --> 01:01.280
+Let's click on the zip file.
+
+01:05.360 --> 01:07.010
+Drag it to the applications folder.
+
+01:08.190 --> 01:09.750
+Now let's open vs code.
+
+01:12.430 --> 01:16.930
+So from the extension section, you can search for a lab.
+
+01:20.460 --> 01:26.160
+As you can see, there are lots of features and it's very useful for reverse engineering and RPK because
+
+01:26.400 --> 01:34.590
+it's got lots of built in tools which are very important for testing, such as a tool, Jagex zip line,
+
+01:34.620 --> 01:35.720
+all sorts of things.
+
+01:35.730 --> 01:41.160
+And it performs all the steps automatically with these tools, which also is pretty good.
+
+01:42.190 --> 01:48.880
+So, Anita, open the command palette with control, shift P to use it, click on the install button.
+
+01:50.090 --> 01:54.540
+OK, let's download new RPK file and try to decompiled.
+
+01:56.040 --> 02:02.580
+So one of the vulnerable apps we'll use throughout the course is Insecure Bank, it's an application
+
+02:02.580 --> 02:04.650
+for Android, so it's downloaded.
+
+02:06.220 --> 02:08.110
+And download the APK file.
+
+02:11.280 --> 02:14.010
+OK, let's go back to the code.
+
+02:15.370 --> 02:18.280
+And press control shift to open the command pallet.
+
+02:20.110 --> 02:24.520
+Click on APK Lab and add the epic file.
+
+02:26.170 --> 02:30.310
+Select decompiled Jova Option and OC.
+
+02:34.670 --> 02:37.220
+All right, so it opens in a new window.
+
+02:38.680 --> 02:42.370
+As you can see, this is the source code of the app.
+
+02:44.460 --> 02:47.550
+So we'll analyze it in detail while we're testing it.
+
+02:49.240 --> 02:51.880
+So let's download this code to this time.
+
+02:53.080 --> 03:00.190
+So we'll open up a Web browser, search for the code and click to the official website.
+
+03:01.360 --> 03:02.950
+I hear you're going to have to scroll down a bit.
+
+03:04.180 --> 03:12.850
+And you can see the features of the tax code in detail, it's really very powerful and very useful code.
+
+03:12.880 --> 03:13.300
+Ed?
+
+03:15.290 --> 03:23.000
+But we're going to use it for the ABQ lab extension and like I said earlier, you lab is Android Reverse
+
+03:23.000 --> 03:24.290
+Engineering Workbench.
+
+03:25.520 --> 03:26.900
+So click on download.
+
+03:28.320 --> 03:35.270
+And of course, you can install it on all platforms and insulation is, again, very easy.
+
+03:37.280 --> 03:41.960
+So let's click on this button to download the Debian package, see the file.
+
+03:42.010 --> 03:42.440
+OK.
+
+03:45.620 --> 03:47.930
+Now you've got to open a terminal screen.
+
+03:50.180 --> 03:52.190
+Change directory to the downloads folder.
+
+03:54.610 --> 03:55.440
+Lost file.
+
+03:55.780 --> 03:56.560
+OK, it's here.
+
+03:58.380 --> 04:02.820
+Now, to install it, just run pseudo apte install.
+
+04:03.940 --> 04:05.200
+And the debt package.
+
+04:11.850 --> 04:13.260
+All right, so that's completed.
+
+04:14.830 --> 04:16.540
+Now, let's open it up from the menu.
+
+04:22.120 --> 04:26.380
+From the extension section, you can search for APIC Lab.
+
+04:30.950 --> 04:36.830
+Now, as you can see here, there are lots of features and, yeah, it's very useful for reverse engineering
+
+04:36.830 --> 04:41.120
+and HBK because it's got all kinds of built in tools which are very important.
+
+04:42.460 --> 04:50.560
+And we're going to use some of them, such as RPK Tool, Jadakiss, Zip Line, and we're going to perform
+
+04:50.560 --> 04:57.460
+all of these steps using these tools and you'll see how useful automatic tools can be.
+
+04:59.100 --> 05:01.230
+And click on the install button.
+
+05:07.500 --> 05:11.790
+So just press control shift P and it opens the command post.
+
+05:13.630 --> 05:18.130
+Click on a Becae lab and add the APK file.
+
+05:19.860 --> 05:24.690
+Select decompiled Javor as your option and click OK.
+
+05:29.400 --> 05:35.460
+All right, so it opens up in a new window and you're looking at the source code of the app.
+
+05:36.930 --> 05:39.100
+And you don't need to read it all now.
+
+05:39.120 --> 05:41.910
+We'll analyze it in detail while we're testing.

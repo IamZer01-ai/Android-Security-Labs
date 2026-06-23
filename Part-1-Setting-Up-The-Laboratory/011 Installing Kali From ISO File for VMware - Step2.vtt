@@ -1,0 +1,175 @@
+WEBVTT
+
+00:00.300 --> 00:04.660
+So what do you think the second step of installing Colly from the ISO file is?
+
+00:05.010 --> 00:12.570
+That's right, installation the ISO file for like Caylee has been downloaded and it's in the download
+
+00:12.570 --> 00:13.020
+folder.
+
+00:15.630 --> 00:22.110
+Now I go to VMware Fusion Virtual Machine Library on the upper left corner, click the red button and
+
+00:22.110 --> 00:26.150
+select new we're on the installation method selection window.
+
+00:26.790 --> 00:32.310
+So the big option, which is selected by default, is our option install from disk or image.
+
+00:32.910 --> 00:34.660
+Now I can click, continue to move on.
+
+00:36.030 --> 00:38.230
+So now is it time to select the ISO file?
+
+00:39.210 --> 00:42.770
+We can't just drop the file if we drag it from over here.
+
+00:43.110 --> 00:44.250
+Here's a file browser.
+
+00:44.730 --> 00:49.920
+Select the ISO file drag and drop it in the insulation wizard and click continue.
+
+00:51.610 --> 00:55.490
+In the next step, we have to choose the operating system of the VM.
+
+00:56.230 --> 01:02.740
+Now we know the Collie is a Debian based Linux distro and we downloaded the 64 bit version.
+
+01:02.740 --> 01:07.930
+So choose Linux then the 64 bit version of the latest Debian.
+
+01:08.380 --> 01:10.180
+And once again, click continue.
+
+01:11.750 --> 01:19.400
+You can select the firmware type of a virtual machine, legacy BIOS is a standard BIOS firmware.
+
+01:20.980 --> 01:28.720
+UFA is an interface between the operating system and the platform firmware, so if you do select your
+
+01:28.730 --> 01:37.090
+Wi-Fi, you have the option of enabling you efi secure boot and of course, that secures the process.
+
+01:39.240 --> 01:42.330
+Now, here, I'm going to choose the legacy bios option.
+
+01:44.570 --> 01:51.590
+So now we're on the last step of insulation and there's a summary here, the default values are two
+
+01:51.590 --> 01:54.700
+gigabytes of RAM networking, et cetera.
+
+01:55.640 --> 01:59.850
+So when I click the finish button, it asks for the location in the name of the VM file.
+
+02:00.470 --> 02:01.550
+I'm OK with the default.
+
+02:02.120 --> 02:05.440
+It's better to collect VMS in the same location, in my opinion.
+
+02:05.720 --> 02:10.380
+That way I stay organized and I recommend you do two and click save.
+
+02:11.270 --> 02:13.670
+Now the VM boots for the very first time.
+
+02:17.000 --> 02:23.750
+In the Bootmen, you choose one of the install or graphical install options, I'll I'll show you with
+
+02:23.750 --> 02:26.300
+a graphical install, looks like no.
+
+02:30.210 --> 02:36.970
+As you see, it's a typical operating system installation, we need to configure the OS now, so select
+
+02:36.970 --> 02:40.380
+the language, location and keyboard configuration.
+
+02:46.210 --> 02:50.080
+And now network configuration has been completed successfully.
+
+02:51.360 --> 02:58.590
+So I said the hostname to Caleigh and let's give it a domain name, I'll just choose the same name and
+
+02:58.590 --> 02:59.220
+continue.
+
+03:03.070 --> 03:05.680
+I said the username and password for the new user.
+
+03:06.720 --> 03:11.790
+Because Kelly will not use a route account by default when it started.
+
+03:22.210 --> 03:28.540
+Don't need any partitions, we're only installing Colly Light is a virtual machine, so we can use the
+
+03:28.540 --> 03:35.380
+entire disk reserve for itself, continue, keep going with the default options for disk partitioning.
+
+03:46.790 --> 03:49.280
+Yes, right, the changes to discuss.
+
+03:54.020 --> 03:55.670
+Now the system is being installed.
+
+03:58.490 --> 04:00.800
+And just like before, it may take several minutes.
+
+04:07.090 --> 04:14.080
+So here, Callie asks for the HTP proxy information, but we're not going to need it now so we can just
+
+04:14.080 --> 04:16.050
+leave it blank and continue.
+
+04:28.450 --> 04:33.730
+And in this section, you can choose the desktop environment that you want to use, Callie is no longer
+
+04:33.730 --> 04:36.850
+offering separate images for every desktop environment.
+
+04:37.550 --> 04:40.060
+There's just a single image for all of them.
+
+04:41.150 --> 04:47.540
+And it can be chosen during installation, so I will continue with a default option Xixi.
+
+05:16.200 --> 05:19.590
+It's asking to install the Grupp bootloader to the master boot record.
+
+05:21.820 --> 05:26.500
+Now, this is more meaningful when you install an operating system as a second one on the host.
+
+05:26.980 --> 05:32.610
+We're just installing a virtual machine, so it's the only operating system for it.
+
+05:32.620 --> 05:36.460
+So, yes, install the grubbed bootloader to the master boot record.
+
+05:39.070 --> 05:43.900
+We have only one partition to install grub, so I select that and continue.
+
+05:52.910 --> 05:59.060
+And installation is complete, so it's time to boot into our new system continue.
+
+06:12.280 --> 06:14.070
+We are finally the login screen.
+
+06:15.430 --> 06:18.400
+Log in with username and password that you've set.
+
+06:19.710 --> 06:23.610
+Welcome to 64 Bit Co. installed by the ISO Far.
+
+06:29.380 --> 06:31.710
+So I want to turn it off for now.
+
+06:36.180 --> 06:39.210
+Now, let's go to the folder that we chose for insulation.
+
+06:43.480 --> 06:48.220
+Order by date modified and here is the call like pvm file.

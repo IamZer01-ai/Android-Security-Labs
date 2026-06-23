@@ -1,0 +1,109 @@
+WEBVTT
+
+00:00.990 --> 00:08.100
+So Kali Linux is a Debian based Linux distribution aimed at advance penetration testing and security
+
+00:08.100 --> 00:08.550
+auditing.
+
+00:09.680 --> 00:15.590
+Collie contains several hundred tools which are geared towards various information security tasks such
+
+00:15.590 --> 00:20.570
+as penetration testing, security research, computer forensics and reverse engineering.
+
+00:21.670 --> 00:28.120
+Kali Linux is developer funded and maintained by Offensive Security, a leading information security
+
+00:28.120 --> 00:28.960
+training company.
+
+00:30.040 --> 00:33.130
+Now we're going to use Carly as the attacker system.
+
+00:33.880 --> 00:39.580
+However, if you don't want to use Carly for whatever reason, you can download the tools that we use
+
+00:39.580 --> 00:41.770
+and install them to your host machine.
+
+00:42.800 --> 00:47.270
+So let's downloaded and install it is a virtual machine on our host system.
+
+00:48.190 --> 00:54.040
+So I'm going to prepare the county VM directly from the virtual box image first.
+
+00:55.100 --> 00:57.320
+The first step is to download the VM files.
+
+00:59.050 --> 01:03.010
+Over the browser and simply Google the words Carly and download.
+
+01:08.960 --> 01:11.990
+The first Web site is the official site of college, so click on it.
+
+01:13.340 --> 01:15.020
+This is the download page of Carly.
+
+01:17.470 --> 01:18.940
+These are the ISO files.
+
+01:20.030 --> 01:26.840
+You can use them to install Carly as the main host or as a virtual machine in any virtualization platform.
+
+01:27.110 --> 01:30.740
+Now these are the images that you can use to install.
+
+01:32.700 --> 01:39.480
+With the latest release, Kali Linux announced that the images have been restructured and simplified.
+
+01:40.260 --> 01:47.730
+So from now on, Kali Linux has new image styles, installer image, a live image and a network installer
+
+01:47.730 --> 01:48.270
+image.
+
+01:50.130 --> 01:55.080
+Installer image is recommended for users who want to use Kali Linux on their system.
+
+01:55.530 --> 01:58.110
+No network connection is required.
+
+01:59.200 --> 02:06.340
+You can choose desktop environments such as Access FC, KDE, Gnome and any other tools that you want
+
+02:06.340 --> 02:08.230
+to install during your installation.
+
+02:09.900 --> 02:11.520
+Now, the second one is a live image.
+
+02:12.520 --> 02:14.950
+So it's used to run Cowley without installing it.
+
+02:16.240 --> 02:22.030
+And the last one is a network install image, the smallest image, of course, download containing only
+
+02:22.030 --> 02:28.630
+enough to install the base system that requires a network connection to install selected applications.
+
+02:31.550 --> 02:35.210
+At the bottom of the collar image files table, there are ready to use.
+
+02:35.480 --> 02:38.570
+Well, almost ready to use collee virtual machines.
+
+02:39.020 --> 02:44.930
+So if you're going to use Colli as a virtual machine, you can use them instead of installing ISO files
+
+02:44.930 --> 02:45.590
+from scratch.
+
+02:48.360 --> 02:53.640
+Click this link under the Kelly Lennix Virtual Box tab to download the oveI file.
+
+02:55.830 --> 02:58.020
+And the download has been completed.
+
+02:59.190 --> 03:03.720
+So here you can just simply run the overlay file to run the VM.
