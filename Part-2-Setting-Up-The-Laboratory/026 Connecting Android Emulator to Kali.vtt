@@ -1,0 +1,169 @@
+WEBVTT
+
+00:01.500 --> 00:08.610
+All right, so on this lecture will create a virtual mobile device using Gennie motion before connecting
+
+00:08.610 --> 00:11.700
+the emulator to Calli with EDB.
+
+00:12.310 --> 00:12.780
+Ready?
+
+00:12.930 --> 00:13.760
+Let's get started.
+
+00:14.430 --> 00:15.540
+Open Jenny motion.
+
+00:17.290 --> 00:22.240
+And on the upper right hand corner, click on this button to create a virtual device.
+
+00:23.360 --> 00:26.300
+And you can select one of the virtual devices from the list.
+
+00:27.500 --> 00:35.630
+And I'll use default settings for my display and change Android version to Android 10, nine or eight.
+
+00:36.640 --> 00:39.340
+Network Môn will be net network.
+
+00:40.300 --> 00:42.760
+Click, install and wait for a bit.
+
+00:45.790 --> 00:48.580
+All right, so it's installed, let's start her up.
+
+00:56.170 --> 00:57.850
+And it starts.
+
+00:59.260 --> 01:05.440
+So as you can see, a virtual machine for the virtual device has been created in virtual box.
+
+01:07.020 --> 01:13.530
+However, we will start the virtual mobile device from Jenny Motion, not from here.
+
+01:15.430 --> 01:20.680
+And it's running now so we can go to the settings of the device on Virtual Bong's.
+
+01:23.240 --> 01:24.740
+Open network settings.
+
+01:25.860 --> 01:32.730
+As you can see, two network adapters are defined for the virtual device, first one is hosted only.
+
+01:32.730 --> 01:34.200
+The second one is Nat.
+
+01:35.510 --> 01:39.740
+In virtual box, Nat and Nat network are different options.
+
+01:40.670 --> 01:48.290
+To connect Kali and Android, virtual devices will need to create a net network and add these machines
+
+01:48.620 --> 01:50.150
+to the same net network.
+
+01:51.610 --> 01:57.700
+So open the preferences, a virtual box and go to the network setting.
+
+01:59.090 --> 02:03.560
+Click the plus button on the right hand side to create a net network.
+
+02:05.430 --> 02:09.180
+All right, so now let's go to the network settings of the Android virtual device.
+
+02:11.950 --> 02:21.430
+Changed Nat to Nat network so you can follow the same steps for Carly and then add Carly to the same
+
+02:21.430 --> 02:22.270
+NAT network.
+
+02:24.790 --> 02:28.540
+So we'll go to a Web browser and check for Internet connectivity.
+
+02:32.770 --> 02:40.270
+All right, that's no problem, so open a terminal screen and look at the connection of the virtual
+
+02:40.270 --> 02:43.540
+device and the host machine with HDB.
+
+02:45.680 --> 02:54.080
+So it was in the Platform Tools folder in Android Studios SDK folder, so we'll go to this location.
+
+02:55.100 --> 02:57.350
+And yes, of course, it's here.
+
+02:58.600 --> 03:03.400
+Now, to use HDB in the terminal, regardless of the directory you're in.
+
+03:04.340 --> 03:07.040
+All you have to do is add EDB to the path.
+
+03:09.150 --> 03:10.810
+So first will run the P.
+
+03:10.830 --> 03:13.530
+WD command to copy this location.
+
+03:15.790 --> 03:23.590
+Then run export path equals dollar sign path and folder path of the EDB.
+
+03:25.020 --> 03:33.630
+And we'll also add this to the Basche profile, that is the personal initialization file for configuring
+
+03:33.630 --> 03:34.560
+the user environment.
+
+03:37.420 --> 03:40.930
+And now let's refresh the Basche profile with a source command.
+
+03:43.000 --> 03:45.010
+And you can also restart your terminal.
+
+03:47.140 --> 03:49.900
+Now, let's go back to the home folder or any folder.
+
+03:51.320 --> 03:52.670
+And run, Adeeb.
+
+03:53.970 --> 04:00.960
+All right, so it works great, let's run Adibi devices as our command to see the connected devices.
+
+04:02.610 --> 04:05.040
+And it will show the virtual devices.
+
+04:06.690 --> 04:13.980
+And you can also use the gentle motion shell to see the devices so open to any motion shall.
+
+04:16.810 --> 04:18.190
+Run devices list.
+
+04:21.640 --> 04:28.720
+All right, so this is the list of available devices and it comes in the form of a table, and here's
+
+04:28.720 --> 04:29.350
+my device.
+
+04:30.630 --> 04:33.510
+So the emulator connected to my host machine.
+
+04:34.740 --> 04:42.300
+Now, let's connect it to Cali, so we'll go to Kelly, open a terminal screen type EDB devices.
+
+04:44.860 --> 04:48.220
+And of course, there are no devices now, so we should connect it.
+
+04:49.680 --> 04:50.760
+Copy this address.
+
+04:53.400 --> 04:57.390
+Run ADB, connect and paste the address.
+
+04:58.980 --> 05:00.510
+All right, so now it's connected.
+
+05:01.530 --> 05:04.410
+Let's check with EDB devices.
+
+05:05.880 --> 05:09.540
+All right, so see how that shows at my device has been attached.

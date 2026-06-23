@@ -1,0 +1,67 @@
+WEBVTT
+
+00:00.660 --> 00:03.330
+Now connecting a real device to Kali.
+
+00:05.150 --> 00:06.020
+Is going to be fun.
+
+00:06.050 --> 00:10.400
+So on this lecture, I'll show you how to connect a real Android device to Kawi with EDB.
+
+00:11.790 --> 00:19.410
+So first, you should enable developer mode and USB debugging on the device in order to use the HDB
+
+00:19.440 --> 00:20.820
+debugging interface.
+
+00:22.120 --> 00:26.830
+So first, we'll go to about phone, which is under settings.
+
+00:29.200 --> 00:36.880
+Tab unbuild version of the device seven times, then you'll see you are a developer, which is the note
+
+00:36.880 --> 00:42.970
+on the screen now for the next step, go back to settings and open additional settings.
+
+00:44.130 --> 00:46.830
+Then find developer options.
+
+00:48.260 --> 00:50.120
+And enable USB debugging.
+
+00:51.030 --> 00:56.280
+So first, install the USB and USB debugging security testing options.
+
+00:57.000 --> 00:59.850
+So now we're ready to connect the device to Kalli.
+
+01:00.690 --> 01:05.790
+So after plugging your Android phone into your computer, you will see this message on your phone.
+
+01:06.790 --> 01:09.560
+You must allow this device to connect to Kawi.
+
+01:10.300 --> 01:11.600
+All right, so let's start.
+
+01:12.160 --> 01:13.090
+So go to Kalli.
+
+01:14.010 --> 01:19.380
+Plug your Android phone into your computer and allow the USB debugging on your phone.
+
+01:21.090 --> 01:23.310
+Go to the top menu, a virtual box.
+
+01:24.360 --> 01:29.940
+Open UCB under the devices and select your phone to plug the device into Caleigh.
+
+01:32.010 --> 01:34.860
+All right, so now let's open a terminal screen.
+
+01:36.220 --> 01:38.110
+Run HDB devices.
+
+01:39.120 --> 01:42.120
+And sure enough, that attaches the device.
