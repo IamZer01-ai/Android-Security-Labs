@@ -1,0 +1,136 @@
+WEBVTT
+
+00:00.240 --> 00:06.720
+Welcome to the Android Ethical Hacking and penetration testing course, this course is brought to you
+
+00:06.720 --> 00:08.130
+by Muharrem IDN.
+
+00:08.130 --> 00:09.380
+And who are you, Ozdemir?
+
+00:10.230 --> 00:13.710
+Our computer engineers and cyber security experts.
+
+00:13.710 --> 00:15.870
+And we will be your instructors in this course.
+
+00:17.450 --> 00:24.560
+The objective of this course is to teach you Android penetration testing with full hands on demos and
+
+00:24.560 --> 00:26.900
+practices the first.
+
+00:27.890 --> 00:33.350
+One year to learn what's happening behind the scenes, so that means I'm going to be talking about the
+
+00:33.350 --> 00:41.360
+Android architecture Android security model and developing a basic Android app in the developer overview
+
+00:41.360 --> 00:47.500
+section for you so that you can better understand the background of the Android operating system.
+
+00:48.560 --> 00:50.930
+And its development over the years.
+
+00:52.190 --> 00:55.110
+So I'm going to ask for your patience in these sections.
+
+00:55.720 --> 00:56.740
+We've got a lot to get through.
+
+00:57.470 --> 01:04.190
+What's really exciting is we take a hands on approach to these practices of the attacks and you can
+
+01:04.190 --> 01:06.290
+make them on your own computer.
+
+01:07.290 --> 01:13.660
+Now, in the beginning, the course will be setting up a laboratory for you to use throughout the course,
+
+01:13.680 --> 01:17.730
+installing all the necessary virtual machines and tools.
+
+01:19.100 --> 01:24.980
+So I present to you the main sections of this complete and comprehensive course, so let's have a look
+
+01:24.980 --> 01:27.050
+at what we're going to learn in each section briefly.
+
+01:29.230 --> 01:34.690
+I'll introduce you to Android, so in this section, you'll get to know the history of Android and the
+
+01:35.230 --> 01:36.700
+Android ecosystem.
+
+01:38.190 --> 01:44.700
+An Android architecture, you will learn the Android software stack Android runtime.
+
+01:45.660 --> 01:49.980
+And the Analise apk file structure in Android studio.
+
+01:52.120 --> 01:58.660
+Android security model, so in this section, you're going to get to know the application, sandboxing
+
+01:58.660 --> 02:01.000
+permissions and see Linux.
+
+02:02.110 --> 02:04.330
+And in the Android internal section.
+
+02:05.300 --> 02:11.180
+You'll see the developer overview for Android apps, types of mobile apps, and you'll also learn how
+
+02:11.180 --> 02:17.840
+to create Android virtual devices, Android components, and you'll develop a basic Android app yourself.
+
+02:18.800 --> 02:24.230
+Now for setting up the laboratory, we've devoted a whole section where you set up the laboratory to
+
+02:24.230 --> 02:28.730
+be ready for the course and the different hands on practice that we will do.
+
+02:29.450 --> 02:39.890
+It will install Calli Virtual Box Android Studio, Gennie Motion Mob S.F. The Code apk studio apk tool
+
+02:40.310 --> 02:43.910
+Android Debug Bridge and the bytecode viewer.
+
+02:44.720 --> 02:50.060
+It's also important for you to learn how to connect an emulator or real device, as well as Kawi and
+
+02:50.060 --> 02:50.930
+Rooting BASIX.
+
+02:52.950 --> 02:57.720
+Now, Android static security analysis is an entire section.
+
+02:58.700 --> 03:07.160
+Devoted to reverse engineering and apk file information gathering, repackaging, reassigning and RPK
+
+03:07.790 --> 03:17.300
+static analysis with Mobb S.F. route detection and obfuscation techniques, and then we get to Android
+
+03:17.300 --> 03:18.140
+pen testing.
+
+03:18.980 --> 03:26.210
+So in this section, this is where you'll learn oos mobile top 10 vulnerabilities and you'll perform
+
+03:26.210 --> 03:30.320
+security testing on intentionally vulnerable mobile apps.
+
+03:31.190 --> 03:34.610
+So I also want to tell you who this course is targeted for.
+
+03:35.390 --> 03:37.040
+It's for penetration testers.
+
+03:37.580 --> 03:43.520
+You want to do a penetration testing against Android mobile phones, application developers who want
+
+03:43.520 --> 03:45.650
+to write secure mobile applications.
+
+03:46.570 --> 03:51.490
+But basically, anyone who wants to protect themselves against mobile attacks.
